@@ -1,0 +1,198 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1790840942992519270
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1790840943042877381}
+  m_Layer: 0
+  m_Name: Muzzle
+  m_TagString: 
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1790840943042877381
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790840942992519270}
+  m_LocalRotation: {x: 0.4238723, y: -0.5593161, z: -0.421836, w: 0.5740663}
+  m_LocalPosition: {x: -0.1194746, y: 0.007217236, z: 0.03868132}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1790840943042876554}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1790840942992519738
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1790840943042873677}
+  - component: {fileID: 1790840944888378772}
+  m_Layer: 0
+  m_Name: Blaster
+  m_TagString: 
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1790840943042873677
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790840942992519738}
+  m_LocalRotation: {x: 0.09482437, y: 0.7221819, z: -0.03459196, w: 0.6842989}
+  m_LocalPosition: {x: 211.0844, y: 1.477093, z: -584.6472}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1790840943042876554}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1790840944888378772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790840942992519738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 970d8cf390429a085cac4a12316efe8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DebugLog: 0
+  Archetype: 0
+  Type: 1
+  AmmoType: 8
+  WeaponNameInList: 19
+  Name: 
+  AttackDistance: 0
+  Damage: 180
+  WeaponDamageType: 6
+  DefenceIgnorence: 0
+  AttackDelay: 0.85
+  SoundAttack: {fileID: 8300000, guid: b7350c3e0b064f238fca454cc0868725, type: 3}
+  SoundHit: {fileID: 8300000, guid: 05119d5553844b10ad717bd9d2b38554, type: 3}
+  image: {fileID: 21300122, guid: ee58cdc960a543e88db96186d9e0f8a1, type: 3}
+  Unique: 0
+  WeaponObjects:
+  - {fileID: 1790840942992519738}
+  AimOffset: {x: 0.4, y: -0.3}
+  lastAttackTime: 0
+  RangedWeaponType: 0
+  BigGun: 0
+  ShotSfx: 0
+  Tracer: {fileID: 0}
+  RechargeSound: {fileID: 8300000, guid: 4514cc078fc840f9b377bc4bc8874df3, type: 3}
+  ShotgunBulletsCount: 8
+  RechargeDelay: 2.1
+  ScatterAngle: 0.5
+  FireKickPower: 1
+  IsFiniteAmmo: 1
+  ShootAlarmRange: 30
+  Muzzle: {fileID: 1790840943042877381}
+  IgnoreMuzzleDirection: 0
+  IsRecharging: 0
+  AmmoContainer: {fileID: 0}
+  RangedFireDistanceNPC: 15
+  AmmoCartridgeCapacity: 25
+  AmmoOutOfCartridgeCount: 0
+  EnergyCost: 0
+  LastHitDirectionVector: {x: 0, y: 0, z: 0}
+  LastHitPosition: {x: 0, y: 0, z: 0}
+--- !u!1 &1790840942992523894
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1790840943042876554}
+  - component: {fileID: 1790840943529419184}
+  - component: {fileID: 1790840943361646152}
+  m_Layer: 0
+  m_Name: Blaster
+  m_TagString: 
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1790840943042876554
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790840942992523894}
+  m_LocalRotation: {x: -0.10235841, y: 0.78779495, z: 0.5597845, w: 0.23567615}
+  m_LocalPosition: {x: 0.148, y: -0.058, z: -0.094}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1790840943042877381}
+  m_Father: {fileID: 1790840943042873677}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -68.472, y: 135.603, z: 16.233}
+--- !u!33 &1790840943529419184
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790840942992523894}
+  m_Mesh: {fileID: 4300000, guid: b3334199a02a40579031426c3f9c7d15, type: 2}
+--- !u!23 &1790840943361646152
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790840942992523894}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 8ecd5755a52b4929a785b387eb6d80d4, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}

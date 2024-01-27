@@ -35,10 +35,10 @@ namespace Game.PickUps
 					break;
 				case WeaponTypes.Pistol:
 				case WeaponTypes.SMG:
-					slotIndex = 2;
+                case WeaponTypes.Shotgun:
+                    slotIndex = 2;
 					break;
 				case WeaponTypes.Rifle:
-				case WeaponTypes.Shotgun: 
 					slotIndex = 3;
 					break;
 				case WeaponTypes.Heavy:

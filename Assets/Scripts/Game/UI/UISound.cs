@@ -6,6 +6,6 @@ public class UISound : MonoBehaviour
 {
     public void Play()
     {
-        SoundSource.Instance.PlayUI();
+        //SoundSource.Instance.PlayUI();
     }
 }

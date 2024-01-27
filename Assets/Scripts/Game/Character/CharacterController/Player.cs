@@ -585,6 +585,7 @@ namespace Game.Character.CharacterController
                 ResetMoveState();
             }
             base.ReplaceOnRagdoll(canWakeUp, out initRagdoll, isDrowning);
+            Debug.LogError("Ngã nè");
         }
 
         public override void Footsteps()

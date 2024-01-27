@@ -17,8 +17,8 @@ namespace UnitySampleAssets.CrossPlatformInput
 		{
 			downedStateName = string.Empty;
 			CrossPlatformInputManager.SetButtonUp(name);
-			if(AdManager.Instance.IsInterstitialLoaded())
-				AdManager.Instance.ShowInterstitial();
+			//if(AdManager.Instance.IsInterstitialLoaded())
+			//	AdManager.Instance.ShowInterstitial();
 		}
 
 		public void SetAxisPositiveState(string name)

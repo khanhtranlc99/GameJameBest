@@ -50,11 +50,13 @@ namespace Game.Weapons
 
 		public void OnClick()
 		{
-			if (SlotIsLocked)
-			{
-				WeaponDialogPanel.BuyWeaponSlot(RelatedSlot.BuyToUnlock, UpdateImage);
-				return;
-			}
+            if (SlotIsLocked)
+            {
+				Debug.LogError("SlotIsLocked");
+                WeaponDialogPanel.BuyWeaponSlot(RelatedSlot.BuyToUnlock, UpdateImage);
+                return;
+            }
+			Debug.LogError("Unlock");
 			PlayerManager.Instance.WeaponController.ChooseSlot(RelatedSlotIndex);
 			WeaponManager.Instance.CloseWeaponPanel();
 		}

@@ -28,15 +28,9 @@ public class SkillManager : MonoBehaviour
         currentSkill = buttonSkill;
         if (!buttonSkill.canUse)
         {
-            if (AdManager.Instance.IsRewardVideoLoaded())
-            {
-                AdManager.Instance.ShowRewardVideo(UnlockSkill);
-                return;
-            }
-            else
-            {
+            
                 UI_GeneralPopup.ShowPopup(StringHelper.ADS_NOT_AVAILABLE_HEADER, StringHelper.ADS_NOT_AVAILABLE);
-            }
+           
             return;
         }
         if (!allSkills[currentSkillIndex].IsCanUse())

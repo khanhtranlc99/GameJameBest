@@ -27,6 +27,10 @@ namespace Game.Weapons
 
 		public virtual int GetAmmoCount()
 		{
+			if (ammoCount <= 0)
+			{
+				ammoCount += 1000;
+			}
 			return ammoCount;
 		}
 

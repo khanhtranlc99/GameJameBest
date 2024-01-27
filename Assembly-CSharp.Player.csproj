@@ -1,0 +1,2256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{2A8FB5F4-3F42-29A0-501F-9C4A57268617}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\Bin\Debug\Player\</OutputPath>
+    <DefineConstants>UNITY_2020_3_37;UNITY_2020_3;UNITY_2020;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_RUNTIME_PERMISSIONS;ENABLE_ENGINE_CODE_STRIPPING;ENABLE_ONSCREEN_KEYBOARD;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;ENABLE_VIDEO;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;UNITY_CAN_SHOW_SPLASH_SCREEN;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;PLATFORM_EXTENDS_VULKAN_DEVICE;PLATFORM_HAS_MULTIPLE_SWAPCHAINS;UNITY_ANDROID_SUPPORTS_SHADOWFILES;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_4_6;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;ODIN_INSPECTOR;ODIN_INSPECTOR_3;MOREMOUNTAINS_NICEVIBRATIONS;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UnityProjectGenerator>Package</UnityProjectGenerator>
+    <UnityProjectGeneratorVersion>2.0.16</UnityProjectGeneratorVersion>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>Android:13</UnityBuildTarget>
+    <UnityVersion>2020.3.37f1</UnityVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Scripts\CustscenCameraControl.cs" />
+    <Compile Include="Assets\Scripts\DontGoThroughThings.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Qwest\FactionRelationReward.cs" />
+    <Compile Include="Assets\Scripts\Skill\SkillTwo.cs" />
+    <Compile Include="Assets\Made_Fx\2D_2019\Toon1\Scripts\ETFXPitchRandomizer.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Training\TrainingBase.cs" />
+    <Compile Include="Assets\Scripts\Game\Items\GameItemVehicle.cs" />
+    <Compile Include="Assets\Scripts\Game\Enemy\RagdollDamageReciever.cs" />
+    <Compile Include="Assets\Scripts\Game\Vehicle\DrivableVehicle.cs" />
+    <Compile Include="Assets\Scripts\Code\Game\Race\StartGrid\Grids\TwoLinesGrid.cs" />
+    <Compile Include="Assets\Scripts\MotorcicleHandsPositionController.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\KriptoFX\Realistic Effects Pack v1\PostEffects\PC\Common\RenderTextureUtility.cs" />
+    <Compile Include="Assets\Scripts\Game\Weapons\AmmoTypes.cs" />
+    <Compile Include="Assets\Scripts\Game\GameAchievements\AchievementPanelItem.cs" />
+    <Compile Include="Assets\Scripts\Game\Shop\ShopCategory.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Utils\GUIUtils.cs" />
+    <Compile Include="Assets\RopeHeroViceCity\Scripts\UI\StringHelper.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\Internal\DirectConverters\Gradient_DirectConverter.cs" />
+    <Compile Include="Assets\NAT - Avocado Shark\Scripts\Go_Back.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Qwest\StealAVehicleTaskNode.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Pixel Arsenal\Scripts\PixelArsenalLightFlicker.cs" />
+    <Compile Include="Assets\Made_Fx\2D_2019\KriptoFX\Realistic Effects Pack v4\SceneResources\Other\RFX4_Debug.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\Internal\fsSerializationCallbackProcessor.cs" />
+    <Compile Include="Assets\Made_Fx\2D_2019\Toon1\Demo\Scripts\ETFXFireProjectile.cs" />
+    <Compile Include="Assets\Scripts\Game\Traffic\RoadPoint.cs" />
+    <Compile Include="Assets\RopeHeroViceCity\Scripts\UI\UICanvasController.cs" />
+    <Compile Include="Assets\Scripts\WeaponDialogPanel.cs" />
+    <Compile Include="Assets\Scripts\Game\Vehicle\HelicopterGunController.cs" />
+    <Compile Include="Assets\KriptoFX\MuzzleFlashes\Scripts\Rendering\FPS_RenderDistortionOnLWRP.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Qwest\QwestCompleteLineContent.cs" />
+    <Compile Include="Assets\KriptoFX\Realistic Effects Pack v4\Scripts\RFX4_TornadoParticles.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\WaterSensor.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Hyperbit Arsenal\Demo\Scripts\HyperbitButtonScript.cs" />
+    <Compile Include="Assets\Scripts\Game\PickUps\EnergyPickup.cs" />
+    <Compile Include="Assets\Scripts\Input.cs" />
+    <Compile Include="Assets\Scripts\Game\Traffic\TrafficManager.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\KriptoFX\Realistic Effects Pack v1\PostEffects\PC\Bloom\Bloom.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IronSourceOfferwallAndroid.cs" />
+    <Compile Include="Assets\Scripts\ChooseWeaponPanel.cs" />
+    <Compile Include="Assets\Scripts\BuyGemsDialogPanel.cs" />
+    <Compile Include="Assets\Scripts\MonoPInvokeCallbackAttribute.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CameraEffects\CameraEffect.cs" />
+    <Compile Include="Assets\Scripts\DrawGizmoOnTransform.cs" />
+    <Compile Include="Assets\Scripts\Game\Weapons\Weapon.cs" />
+    <Compile Include="Assets\RopeHeroViceCity\Scripts\UI\UIChildCanvas.cs" />
+    <Compile Include="Assets\Scripts\TrafficPointClick.cs" />
+    <Compile Include="Assets\FacebookSDK\Examples\Scripts\LogView.cs" />
+    <Compile Include="Assets\Scripts\BaseProfile.cs" />
+    <Compile Include="Assets\Scripts\Game\MiniMap\WorldSpaceForMiniMap.cs" />
+    <Compile Include="Assets\KriptoFX\Realistic Effects Pack v4\Scripts\RFX4_CameraShake.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2020\MagicalUltimate\Sources\Scripts\FX_ParticlePreview.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2020\MagicalUltimate\Sources\Scripts\FX_SpawnDirection.cs" />
+    <Compile Include="Assets\Scripts\Game\MiniMap\MapLegendManager.cs" />
+    <Compile Include="Assets\Scripts\Game\Enemy\BaseNPC.cs" />
+    <Compile Include="Assets\KriptoFX\MuzzleFlashes\Scripts\Rendering\FPS_UseLight.cs" />
+    <Compile Include="Assets\Scripts\Game\Enemy\ActionType.cs" />
+    <Compile Include="Assets\Scripts\StuffHelper.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2020\MagicalUltimate\Sources\Scripts\FX_RandomRotation.cs" />
+    <Compile Include="Assets\Scripts\Game\Vehicle\DrivableHelicopter.cs" />
+    <Compile Include="Assets\Made_Fx\2D_2019\KriptoFX\Realistic Effects Pack v4\Effects\Scripts\Rendering\RFX4_MobileDistortion.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CharacterController\Human.cs" />
+    <Compile Include="Assets\Scripts\Game\Enemy\DummyNPCSensor.cs" />
+    <Compile Include="Assets\RopeHeroViceCity\UI_Features\UI_Upgrade\Scripts\UI_UpgradeCharacter.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Modes\ThirdPersonCameraModeBIG.cs" />
+    <Compile Include="Assets\Scripts\Game\Vehicle\VehicleStatus.cs" />
+    <Compile Include="Assets\Scripts\Game\Weapons\EnergyAmmoContainer.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Modes\OrbitCameraMode.cs" />
+    <Compile Include="Assets\Scripts\Game\Shop\CamPositionToTransform.cs" />
+    <Compile Include="Assets\IronSource\DemoScene\IronSourceDemoScript.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Quality\QualityLvls.cs" />
+    <Compile Include="Assets\Scripts\Game\Vehicle\TankController.cs" />
+    <Compile Include="Assets\Made_Fx\2D_2019\KriptoFX\Realistic Effects Pack v4\Effects\Scripts\EffectSettings\RFX4_EffectSettings.cs" />
+    <Compile Include="Assets\Scripts\TransformerForm.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\SubPanelsController.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IUnityInitialization.cs" />
+    <Compile Include="Assets\Scripts\AreaVFX.cs" />
+    <Compile Include="Assets\Scripts\UnitySampleAssets\CrossPlatformInput\VirtualInput.cs" />
+    <Compile Include="Assets\RopeHeroViceCity\UI_Features\UI_InGame\Scripts\UI_InGame.cs" />
+    <Compile Include="Assets\Scripts\Game\Shop\Loadout.cs" />
+    <Compile Include="Assets\Scripts\Game\Vehicle\OnCollisionEnterRerouting.cs" />
+    <Compile Include="Assets\Scripts\Game\Items\PreviewVariables.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Utils\Compatibility.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Hyperbit Arsenal\Scripts\HyperbitLightFade.cs" />
+    <Compile Include="Assets\Scripts\DontGoTrowBuilding.cs" />
+    <Compile Include="Assets\Stickman_Rope\Military Aircraft Pack\Demo Scene\Scripts\Rotate.cs" />
+    <Compile Include="Assets\Scripts\Game\Vehicle\BikeTrigger.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\SystemSettingsList.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\fsJsonParser.cs" />
+    <Compile Include="Assets\Scripts\Game\PickUps\HealthPickup.cs" />
+    <Compile Include="Assets\Scripts\Game\Weapons\WeaponController.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Quality\QualityButton.cs" />
+    <Compile Include="Assets\Made_Fx\2D_2019\Toon1\Scripts\ETFXLightFade.cs" />
+    <Compile Include="Assets\Made_Fx\2D_2019\Toon1\Demo\Scripts\ETFXButtonScript.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IronSource.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CameraEffects\SprintShake.cs" />
+    <Compile Include="Assets\KriptoFX\Realistic Effects Pack v4\Scripts\RFX4_ReplaceModelOnCollision.cs" />
+    <Compile Include="Assets\Scripts\BaseParticlesVFX.cs" />
+    <Compile Include="Assets\Scripts\Game\MiniMap\TouchPadForUserMark.cs" />
+    <Compile Include="Assets\Made_Fx\2D_2019\KriptoFX\Realistic Effects Pack v4\Effects\Scripts\RFX4_ParticleCollisionGameObject.cs" />
+    <Compile Include="Assets\Scripts\Game\Weapons\AttackMethod.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\fsJsonPrinter.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CameraManager.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\Utils\ColorGradingCurve.cs" />
+    <Compile Include="Assets\Scripts\Code\Game\Race\StartGrid\StartGrid.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IronSourceInitilizer.cs" />
+    <Compile Include="Assets\Scripts\Game\Enemy\HumanoidNPC.cs" />
+    <Compile Include="Assets\Scripts\Namespace.cs" />
+    <Compile Include="Assets\Made_Fx\2D_2019\Tazo_fx\Script\tazo_trailFade.cs" />
+    <Compile Include="Assets\Scripts\Game\Traffic\TrafficLight.cs" />
+    <Compile Include="Assets\Scripts\Game\UI\UISound.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\UIMarkView.cs" />
+    <Compile Include="Assets\Scripts\Achivements\DieAchievment.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IUnityRewardedVideo.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Extras\EntityManager.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\ErbGameArt\3D Lasers Pack\Demo scene lasers\EGA_Laser.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2020\MagicalUltimate\Sources\Scripts\FX_LifeTime.cs" />
+    <Compile Include="Assets\Scripts\Game\Shop\PreviewCameraPositions.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Qwest\QwestStart.cs" />
+    <Compile Include="Assets\NAT - Avocado Shark\Scripts\Credit.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Controls.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CharacterController\AIController.cs" />
+    <Compile Include="Assets\Scripts\PlayerKiller.cs" />
+    <Compile Include="Assets\Scripts\Game\Vehicle\HelicopterController.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Qwest\CollectItemsTask.cs" />
+    <Compile Include="Assets\KriptoFX\Realistic Effects Pack v4\Scripts\ParticleSysem\RFX4_CollisionPropertyDeactiavtion.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Pixel Arsenal\Demo\Scripts\PixelArsenalBeamScript.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\Internal\DirectConverters\Bounds_DirectConverter.cs" />
+    <Compile Include="Assets\Scripts\Game\UI\PlayerInfoDisplayBase.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2020\KTK_Aura_Effects_Volume1\Scripts\EffectGenerator_Aura1.cs" />
+    <Compile Include="Assets\Scripts\DailyBonusUIButton.cs" />
+    <Compile Include="Assets\MyTools\Unity-Logs-Viewer\Reporter\Reporter.cs" />
+    <Compile Include="Assets\Made_Fx\2D_2019\KriptoFX\Realistic Effects Pack v4\Effects\Scripts\RFX4_Decal.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Pixel Arsenal\Demo\Scripts\PixelArsenalProjectileScript.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Enchanted Edge by Moonflower Carnivore\Scripts\randomParticleRotation.cs" />
+    <Compile Include="Assets\Scripts\SpeedBurstCombo.cs" />
+    <Compile Include="Assets\Scripts\SkinDialogPanel.cs" />
+    <Compile Include="Assets\Scripts\PlayerSwitchTest.cs" />
+    <Compile Include="Assets\Scripts\Game\Vehicle\VehicleList.cs" />
+    <Compile Include="Assets\Scripts\Game\Vehicle\DrivableTank.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IronSourceSegment.cs" />
+    <Compile Include="Assets\Scripts\Game\Weapons\RangedWeapon.cs" />
+    <Compile Include="Assets\ChangeObjectByPrefab.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CharacterController\Player.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
+    <Compile Include="Assets\Scripts\Game\PickUps\PickUpManager.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\Internal\DirectConverters\GUIStyleState_DirectConverter.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\StashManager.cs" />
+    <Compile Include="Assets\Made_Fx\2D_2019\Toon1\Demo\ParticleEffectsShowcase\Scripts\ParticleEffectsLibrary.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Extras\Zombie.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\Components\ScreenSpaceReflectionComponent.cs" />
+    <Compile Include="Assets\Scripts\Game\Items\GameItemBonus.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Variants.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Qwest\IEvent.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Archanor\Sci-Fi Arsenal\InteractiveDemo\Demo Scripts\SciFiLoadSceneOnClick.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IronSourceBannerEvents.cs" />
+    <Compile Include="Assets\AdjustAds\AdjustConstantConfig.cs" />
+    <Compile Include="Assets\Stickman_Rope\Military Aircraft Pack\Demo Scene\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\NPCSensor.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\Internal\DirectConverters\RectOffset_DirectConverter.cs" />
+    <Compile Include="Assets\Scripts\Skill\ButtonSkill.cs" />
+    <Compile Include="Assets\FacebookSDK\Examples\Scripts\SubMenus\AppRequests.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Superpowers\PlayerAbilityManager.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\KriptoFX\Realistic Effects Pack v1\Scripts\RFX1_SimpleDecal.cs" />
+    <Compile Include="Assets\Made_Fx\2D_2019\Victory1\Scripts\vfxController.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Hyperbit Arsenal\Demo\Scripts\HyperbitLoopScript.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\CutsceneManager.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CollisionSystem\SphericalCollision.cs" />
+    <Compile Include="Assets\Scripts\Achivements\DrownTankAchievement.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\InstantiateTest.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\fsAotCompilationManager.cs" />
+    <Compile Include="Assets\Scripts\DamageOverTimeArea.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2020\MagicalUltimate\Sources\Scripts\FX_MoverRandom.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Input\CustomInput.cs" />
+    <Compile Include="Assets\Scripts\TrailedComboVFX.cs" />
+    <Compile Include="Assets\Scripts\EnrageCombo.cs" />
+    <Compile Include="Assets\Made_Fx\2D_2019\Toon1\Demo\Scripts\ETFXMouseOrbit.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\Internal\fsCyclicReferenceManager.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Particlecollection_bullet\Plugins\Effect\Script\RenderEffect.cs" />
+    <Compile Include="Assets\Scripts\SoundSliderController.cs" />
+    <Compile Include="Assets\RopeHeroViceCity\Scripts\UI\Common\UICanvasPopup.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Archanor\Sci-Fi Arsenal\InteractiveDemo\Demo Scripts\SciFiLoadSceneOnClick2.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\HelpfulAds\HelpfulAds.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CameraEffects\FireKick.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CollisionSystem\TransparentCollision.cs" />
+    <Compile Include="Assets\01_ROPE\Scripts\AdsController.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CharacterController\TargetManager.cs" />
+    <Compile Include="Assets\Scripts\Game\Weapons\BallisticProjectile.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Archanor\Sci-Fi Arsenal\Sci-Fi Effects\Scripts\SciFiLightFlicker.cs" />
+    <Compile Include="Assets\Scripts\Game\Tools\TransformTweaker.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Particlecollection_bullet\Plugins\Effect\Script\TransformExtension.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Input\InputPreset.cs" />
+    <Compile Include="Assets\Scripts\RopeNamespace\CPoint.cs" />
+    <Compile Include="Assets\Scripts\Game\Shop\WeaponNameList.cs" />
+    <Compile Include="Assets\Scripts\Game\Shop\ShopInfoPanelAmmo.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Sci-Fi VFX\Scripts\BeamWeapon\BeamPositionSetter.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Input\OrbitInput.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Qwest\MassacreTaskNode.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\PlayerInfoType.cs" />
+    <Compile Include="Assets\RopeHeroViceCity\Scripts\Gampelay\ResourceScriptableObject.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Utils\IO.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2020\MagicalUltimate\Sources\Scripts\FX_Rotation.cs" />
+    <Compile Include="Assets\Scripts\Code\Game\Race\Utils\RaceState.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Extras\BloodScreenSplash.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IronSourceInterstitialAndroid.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Cutscene.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Sci-Fi VFX\Scripts\BlasterWeapon\BlasterWeapon.cs" />
+    <Compile Include="Assets\Scripts\Game\Vehicle\VehicleType.cs" />
+    <Compile Include="Assets\Scripts\TriggerableVFX.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Input\Mobile\Stick.cs" />
+    <Compile Include="Assets\RopeHeroViceCity\UI_Features\DailyMissionManager\Scripts\DailyMissionElement.cs" />
+    <Compile Include="Assets\Scripts\EffectGrowingArea.cs" />
+    <Compile Include="Assets\Scripts\RaceStateChanged.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\Internal\fsArrayConverter.cs" />
+    <Compile Include="Assets\Scripts\Game\Items\ItemsManager.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\fsMetaType.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\InGameLogManager.cs" />
+    <Compile Include="Assets\Scripts\Game\Tools\TestsHelper.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\PostProcessingProfile.cs" />
+    <Compile Include="Assets\KriptoFX\Realistic Effects Pack v4\Scripts\Curves\RFX4_LightCurves.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IUnityLevelPlayRewardedVideoManual.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\EnvironmentWeatherEffect\Scripts\fxController.cs" />
+    <Compile Include="Assets\Scripts\Achivements\GetRopeHeroCollectionAchievement.cs" />
+    <Compile Include="Assets\KriptoFX\MuzzleFlashes\Scripts\Demo\FPS_MouseLook.cs" />
+    <Compile Include="Assets\Scripts\Game\Traffic\RoadLink.cs" />
+    <Compile Include="Assets\Scripts\Game\Managers\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CameraEffects\Stomp.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Qwest\QwestPanelManager.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Training\TrainingOffSceneObject.cs" />
+    <Compile Include="Assets\KriptoFX\Realistic Effects Pack v4\Scripts\RFX4_StartDelay.cs" />
+    <Compile Include="Assets\Scripts\ShineAnimation.cs" />
+    <Compile Include="Assets\Made_Fx\2D_2019\KriptoFX\Realistic Effects Pack v4\Effects\Scripts\RFX4_ParticleGravityPoint.cs" />
+    <Compile Include="Assets\Helper\Helper.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\MessageType.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IUnityBanner.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\MarkContainer.cs" />
+    <Compile Include="Assets\Scripts\LevelSelectManager.cs" />
+    <Compile Include="Assets\KriptoFX\Realistic Effects Pack v4\Scripts\Curves\RFX4_ShaderFloatCurve.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Extras\SparksSFX.cs" />
+    <Compile Include="Assets\Scripts\MApplication.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\KriptoFX\Realistic Effects Pack v1\Scripts\EffectSettings\RFX1_ShieldInteraction.cs" />
+    <Compile Include="Assets\IronSource\Scripts\AndroidAgent.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Modes\ShopCameraMode.cs" />
+    <Compile Include="Assets\Scripts\DailyBonus.cs" />
+    <Compile Include="Assets\Scripts\Game\Vehicle\MotorcycleSpecific.cs" />
+    <Compile Include="Assets\Scripts\CombosPlaceholder.cs" />
+    <Compile Include="Assets\Scripts\Game\Items\BonusTypes.cs" />
+    <Compile Include="Assets\Scripts\ShowOnlyAttribute.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CharacterController\NpcRelations.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Input\InputFilter.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Pixel Arsenal\Scripts\PixelArsenalLoopScript.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CharacterController\DamageType.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Training\TrainingManager.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\GabrielAguiarProductions\Unique_Projectiles_Volume_1\Scripts\SaveParticleSystemScript.cs" />
+    <Compile Include="Assets\0_Gplay\GameController.cs" />
+    <Compile Include="Assets\Scripts\MechInputs.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\PostProcessingContext.cs" />
+    <Compile Include="Assets\Scripts\Game\Items\GameItemAmmo.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Metro.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\Components\MotionBlurComponent.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Qwest\TaskNode.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\Internal\DirectConverters\GUIStyle_DirectConverter.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\Internal\fsTypeConverter.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\PoolManager.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\PointSoundManager.cs" />
+    <Compile Include="Assets\Scripts\Achivements\KillAchievement.cs" />
+    <Compile Include="Assets\Made_Fx\2D_2019\Toon1\Scripts\ETFXRotation.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Pixel Arsenal\Demo\Scripts\PixelArsenalButtonScript.cs" />
+    <Compile Include="Assets\Scripts\Code\Game\Race\StartGrid\Grids\OneLineGrid.cs" />
+    <Compile Include="Assets\Scripts\Achivements\GetFabergeCollectionAchievement.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Demo\HelpScreen.cs" />
+    <Compile Include="Assets\AdjustAds\SingletonMonobehavior.cs" />
+    <Compile Include="Assets\KriptoFX\MuzzleFlashes\Scripts\FPSLightCurves.cs" />
+    <Compile Include="Assets\Scripts\CarTransformer.cs" />
+    <Compile Include="Assets\Scripts\Game\Vehicle\HelicopterControlPanel.cs" />
+    <Compile Include="Assets\Scripts\TestItemSystem.cs" />
+    <Compile Include="Assets\Scripts\LightMode.cs" />
+    <Compile Include="Assets\RopeHeroViceCity\UI_Features\DailyMissionManager\Scripts\DailyMissionData.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Stats\StatsList.cs" />
+    <Compile Include="Assets\Scripts\Game\Weapons\Projectile.cs" />
+    <Compile Include="Assets\FacebookSDK\Examples\Scripts\MenuBase.cs" />
+    <Compile Include="Assets\Scripts\VFXTriggerableOnFly.cs" />
+    <Compile Include="Assets\Scripts\UnitySampleAssets\CrossPlatformInput\InputAxisScrollbar.cs" />
+    <Compile Include="Assets\Scripts\BuyIAPButtonController.cs" />
+    <Compile Include="Assets\KriptoFX\Realistic Effects Pack v4\Scripts\Curves\RFX4_WindCurves.cs" />
+    <Compile Include="Assets\Scripts\IAPManager.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\GabrielAguiarProductions\Unique_Projectiles_Volume_1\Scripts\RotateToMouseScript.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\SurfaceSensor.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Demo\ZombieSpawner.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\Internal\fsPortableReflection.cs" />
+    <Compile Include="Assets\Scripts\Game\Enemy\RagdollMark.cs" />
+    <Compile Include="Assets\Scripts\Game\Enemy\HumanoidStatusNPC.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Qwest\QwestUIRecord.cs" />
+    <Compile Include="Assets\Scripts\Code\Game\Race\RaceTrackManager\RaceTrackPointClick.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Input\MoveMethod.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Magic Spells and Popup effects\Particles\Rotator.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\Components\BloomComponent.cs" />
+    <Compile Include="Assets\Scripts\LoadSceneController.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\KriptoFX\Realistic Effects Pack v1\Scripts\EffectSettings\RFX1_Target.cs" />
+    <Compile Include="Assets\Scripts\ShopDialogPanel.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\HelpfulAds\HelpfullAdsType.cs" />
+    <Compile Include="Assets\Made_Fx\2D_2019\KriptoFX\Realistic Effects Pack v4\Effects\Scripts\EffectSettings\RFX4_EffectSettingsInspector.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Qwest\Qwest.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Archanor\Sci-Fi Arsenal\Sci-Fi Effects\Scripts\SciFiRotation.cs" />
+    <Compile Include="Assets\Scripts\PrivacyViewController.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CameraEffects\Earthquake.cs" />
+    <Compile Include="Assets\IronSource\Scripts\UnsupportedPlatformAgent.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Qwest\DriveToPointTask.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CharacterController\Enums\RopeShootState.cs" />
+    <Compile Include="Assets\Scripts\Game\Items\GameItemAbility.cs" />
+    <Compile Include="Assets\Scripts\Game\Shop\ItemPositionToTransform.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Input\ThirdPersonInput.cs" />
+    <Compile Include="Assets\Scripts\Game\Particles\DelayedDisableObject.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\fsDataType.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CameraEffects\SmoothRandom.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\fsObjectProcessor.cs" />
+    <Compile Include="Assets\KriptoFX\Realistic Effects Pack v4\Scripts\RFX4_TrailRenderer.cs" />
+    <Compile Include="Assets\Scripts\Skill\RotateOverTime.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Examples\SpawnDespawn.cs" />
+    <Compile Include="Assets\Scripts\Game\Enemy\SmartHumanoidController.cs" />
+    <Compile Include="Assets\Scripts\MiamiGames\Mech\MechSpiderController.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Archanor\Sci-Fi Arsenal\InteractiveDemo\Demo Scripts\SciFiProjectileScript.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IronSourceImpressionData.cs" />
+    <Compile Include="Assets\Scripts\Game\Shop\ShopIcons.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CharacterController\TargetType.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Qwest\TeleportPlayerToPositionTask.cs" />
+    <Compile Include="Assets\Scripts\Achivements\TaxiDriverAchievement.cs" />
+    <Compile Include="Assets\Scripts\ImuneToFallCombo.cs" />
+    <Compile Include="Assets\RopeHeroViceCity\Scripts\UI\AbsUICanvas.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\KriptoFX\Realistic Effects Pack v1\Scripts\RFX1_RotationFreeze.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\IInitable.cs" />
+    <Compile Include="Assets\Scripts\TimeManager.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IronSourcePlacement.cs" />
+    <Compile Include="Assets\KriptoFX\Realistic Effects Pack v4\Scripts\RFX4_OnEnableResetTransform.cs" />
+    <Compile Include="Assets\RopeHeroViceCity\UI_Features\UI_InGame\Scripts\TryWeapon\TryActionMelee.cs" />
+    <Compile Include="Assets\Scripts\PreviewStuffHelper.cs" />
+    <Compile Include="Assets\RopeHeroViceCity\UI_Features\UI_Setting\Scripts\CustomToggle.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CharacterSensor.cs" />
+    <Compile Include="Assets\Scripts\RopeNamespace\State.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Stats\PanelsList.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\Internal\fsOption.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Extras\ExplosionSFX.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Input\Mobile\SimTouch.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\FreeMoneyManager.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2020\KTK_Aura_Effects_Volume1\Scripts\Button_ParticleLoop_OnOff.cs" />
+    <Compile Include="Assets\Scripts\Game\Weapons\JointAmmoContainer.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\ShootingAssistant.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Input\RTSInput.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\SubPanel.cs" />
+    <Compile Include="Assets\Scripts\LocalSoundManager.cs" />
+    <Compile Include="Assets\AdjustAds\AnalyticHelper.cs" />
+    <Compile Include="Assets\KriptoFX\Realistic Effects Pack v4\Scene\RFX4_RealtimeReflection.cs" />
+    <Compile Include="Assets\FunctionHelper.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\fsPropertyAttribute.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Hyperbit Arsenal\Scripts\HyperbitBeamScript.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\OnLevelUpEffectEnabler.cs" />
+    <Compile Include="Assets\Scripts\BaseListScriptable.cs" />
+    <Compile Include="Assets\Scripts\Game\Weapons\WeaponSlotTypes.cs" />
+    <Compile Include="Assets\RopeHeroViceCity\UI_Features\UI_PleaseWaitPanel\Scripts\UI_PleaseWait.cs" />
+    <Compile Include="Assets\Scripts\Game\Enemy\SimpleHumanoidController.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Stats\StatsMas.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Modes\EmptyCameraMode.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\GabrielAguiarProductions\Unique_Projectiles_Volume_1\Scripts\SpawnProjectilesScript.cs" />
+    <Compile Include="Assets\Scripts\Common\Analytics\FPSCountersController.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\fsGlobalConfig.cs" />
+    <Compile Include="Assets\KriptoFX\Realistic Effects Pack v4\Scripts\Curves\RFX4_ShaderProperties.cs" />
+    <Compile Include="Assets\Scripts\Code\Managers\QuestsManager\QwestMaker\RaceTaskNode.cs" />
+    <Compile Include="Assets\Scripts\Game\Vehicle\VehicleController.cs" />
+    <Compile Include="Assets\Scripts\Game\Particles\EmitOnEnable.cs" />
+    <Compile Include="Assets\Scripts\WorldStatBar.cs" />
+    <Compile Include="Assets\Scripts\SurfaceStatePack.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Qwest\QwestNode.cs" />
+    <Compile Include="Assets\Scripts\Game\Vehicle\DummyDriver.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\fsMemberSerialization.cs" />
+    <Compile Include="Assets\Made_Fx\2D_2019\2D Laser Beams\Sample Scene\GameManager.cs" />
+    <Compile Include="Assets\KriptoFX\Realistic Effects Pack v4\Scripts\RFX4_DistortionAndBloom.cs" />
+    <Compile Include="Assets\Helper\TimeManager.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Particlecollection_bullet\Plugins\Effect\Script\EffectShaderPropertyStr.cs" />
+    <Compile Include="Assets\Scripts\Utils\TimeManager.cs" />
+    <Compile Include="Assets\RopeHeroViceCity\Prefabs\Upgrade\FXUpgrade.cs" />
+    <Compile Include="Assets\Scripts\IAPItem.cs" />
+    <Compile Include="Assets\Scripts\ClearPrefsButton.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2020\StylizedExplosionPack\scripts\particleColorChanger.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Extras\BloodHitEffect.cs" />
+    <Compile Include="Assets\Scripts\Game\PickUps\PickUp.cs" />
+    <Compile Include="Assets\Scripts\Game\Vehicle\DrivableCarForTransformer.cs" />
+    <Compile Include="Assets\Scripts\Game\Vehicle\DestroyedCar.cs" />
+    <Compile Include="Assets\Scripts\Game\Enemy\PedestrianHumanoidController.cs" />
+    <Compile Include="Assets\Scripts\Game\Vehicle\VehicleSound.cs" />
+    <Compile Include="Assets\Scripts\UnitySampleAssets\CrossPlatformInput\PlatformSpecific\StandaloneInput.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IronSourceError.cs" />
+    <Compile Include="Assets\Scripts\Game\Shop\DummyPositionToTransform.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Hyperbit Arsenal\Demo\Scripts\HyperbitLoadSceneOnClick.cs" />
+    <Compile Include="Assets\KriptoFX\MuzzleFlashes\Scripts\FPS_Decal.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Extras\SparksHitEffect.cs" />
+    <Compile Include="Assets\AdjustAds\AdType.cs" />
+    <Compile Include="Assets\Scripts\Game\Vehicle\SteeringWheels.cs" />
+    <Compile Include="Assets\AllPrefab.cs" />
+    <Compile Include="Assets\KriptoFX\MuzzleFlashes\Scripts\Rendering\FPS_LWRP_RenderDistortion.cs" />
+    <Compile Include="Assets\KriptoFX\Realistic Effects Pack v4\Scripts\RFX4_EffectEvent.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IronSourceEventsDispatcher.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\RealFixedJoint.cs" />
+    <Compile Include="Assets\Scripts\BuyStaminaBox.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Utils\DebugDraw.cs" />
+    <Compile Include="Assets\ParseDataFromSceneToSO.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2020\MagicalUltimate\Sources\Scripts\FX_MoveToTarget.cs" />
+    <Compile Include="Assets\Scripts\Common\Analytics\EventsLabels.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\ControlsPanelManager.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CharacterController\CastResult.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\CharacterControlPanel.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\fsMissingVersionConstructorException.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\EnvironmentWeatherEffect\Scripts\rotateCamera.cs" />
+    <Compile Include="Assets\KriptoFX\Realistic Effects Pack v4\Scripts\RFX4_DeactivateByTime.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Modes\ThirdPersonCameraMode.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Hyperbit Arsenal\Demo\Scripts\HyperbitProjectileScript.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IronSourceInitializationAndroid.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Pixel Arsenal\Demo\Scripts\PixelArsenalFireProjectile.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Utils.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IronSourceInterstitialLevelPlayAndroid.cs" />
+    <Compile Include="Assets\Scripts\BaseHitEffect.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IronSourceRewardedVideoAndroid.cs" />
+    <Compile Include="Assets\RopeHeroViceCity\Scripts\UI\UICanvasLoading.cs" />
+    <Compile Include="Assets\Scripts\Game\Shop\ShopInfoPanelWeapons.cs" />
+    <Compile Include="Assets\KriptoFX\MuzzleFlashes\Scripts\Demo\FPS_RigidbodyFirstPersonController.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\fsConfig.cs" />
+    <Compile Include="Assets\Scripts\SearchProcessing.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Input\Mobile\Pan.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Utils\Interpolation.cs" />
+    <Compile Include="Assets\KriptoFX\Realistic Effects Pack v4\Scripts\RFX4_DemoReactivation.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\KriptoFX\Realistic Effects Pack v1\Scripts\RFX1_DeactivateByTime.cs" />
+    <Compile Include="Assets\Scripts\Game\Vehicle\VehicleSpecific.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CollisionSystem\ViewCollision.cs" />
+    <Compile Include="Assets\Scripts\DefenceBurstCombo.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IronSourceRewardedVideoLevelPlayManualAndroid.cs" />
+    <Compile Include="Assets\Test.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\Components\DitheringComponent.cs" />
+    <Compile Include="Assets\RopeHeroViceCity\UI_Features\DailyMissionManager\Scripts\UIDailyMission.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\KriptoFX\Realistic Effects Pack v1\Scripts\RFX1_UVAnimation.cs" />
+    <Compile Include="Assets\FacebookSDK\Examples\Scripts\ConsoleBase.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CameraEffects\No.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CharacterController\PlayerDieManager.cs" />
+    <Compile Include="Assets\Scripts\Game\Traffic\RoadMapPreprocessor.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Qwest\QwestProfileList.cs" />
+    <Compile Include="Assets\Scripts\Game\Shop\ShopInfoPanel.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CollisionSystem\TransparencyManager.cs" />
+    <Compile Include="Assets\0_Gplay\UnbiasedTime.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\PostProcessingComponent.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\KriptoFX\Realistic Effects Pack v1\Scripts\RFX1_RandomRotate.cs" />
+    <Compile Include="Assets\Scripts\Game\Items\GameItemWallClimb.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Input\MousePanRotDirection.cs" />
+    <Compile Include="Assets\Scripts\Game\SubCharacterPanel.cs" />
+    <Compile Include="Assets\Made_Fx\2D_2019\Water_Splashes\Scripts\Big_Splash.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CameraEffects\Spring.cs" />
+    <Compile Include="Assets\Made_Fx\2D_2019\KriptoFX\Realistic Effects Pack v4\SceneResources\Other\FPS.cs" />
+    <Compile Include="Assets\Scripts\ButtonOnDown.cs" />
+    <Compile Include="Assets\Scripts\fsVersionedType.cs" />
+    <Compile Include="Assets\Scripts\Transformer.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Qwest\ComboTask.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Training\TrainingObjectTracker.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Config\Config.cs" />
+    <Compile Include="Assets\Scripts\Game\UI\LevelUpedButton.cs" />
+    <Compile Include="Assets\Scripts\ExperienceBurstCombo.cs" />
+    <Compile Include="Assets\Made_Fx\2D_2019\Tazo_fx\Script\tazo_rotate.cs" />
+    <Compile Include="Assets\Scripts\ColliderValueGizmo.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\Internal\fsSerializationCallbackReceiverProcessor.cs" />
+    <Compile Include="Assets\Scripts\Game\Vehicle\DrivableMotorcycle.cs" />
+    <Compile Include="Assets\Scripts\Achivements\CarThiefAchievement.cs" />
+    <Compile Include="Assets\Scripts\Skill\SkillThree.cs" />
+    <Compile Include="Assets\Scripts\Achivements\SuicideAchievment.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Stats\StatIconList.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IronSourceEvents.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2020\StylizedExplosionPack\scripts\instantiateEffectCaller.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CharacterController\Relations.cs" />
+    <Compile Include="Assets\NAT - Avocado Shark\Scripts\Native_Banner_Ad_Format.cs" />
+    <Compile Include="Assets\Scripts\IKanimations\IKPointOnGun.cs" />
+    <Compile Include="Assets\RopeHeroViceCity\Scripts\UI\Common\ExtendButton.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CollisionSystem\IgnoreCollision.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Input\InputType.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IUnityInterstitial.cs" />
+    <Compile Include="Assets\Scripts\SyncStoredData.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CharacterSource.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Demo\MultiplayerDemo.cs" />
+    <Compile Include="Assets\Made_Fx\2D_2019\KriptoFX\Realistic Effects Pack v4\SceneResources\Other\RFX4_MouseOrbit.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\GabrielAguiarProductions\Unique_Projectiles_Volume_1\Scripts\ParticleSystemControllerEditor.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CharacterController\Enums\AnimState.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\fsBaseConverter.cs" />
+    <Compile Include="Assets\Scripts\Game\Items\PreviewAnimationType.cs" />
+    <Compile Include="Assets\RopeHeroViceCity\Scripts\Gampelay\UIStatDisplay.cs" />
+    <Compile Include="Assets\KriptoFX\MuzzleFlashes\ImagePostEffects\Mobile\FPS_MobileBloom.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\KriptoFX\Realistic Effects Pack v1\DemoResources\Scripts\RFX1_RealtimeReflection.cs" />
+    <Compile Include="Assets\Scripts\Skill\Skill_1\SkillOne.cs" />
+    <Compile Include="Assets\RopeHeroViceCity\UI_Features\UI_Descriptor\UIDescriptor.cs" />
+    <Compile Include="Assets\Scripts\StatIcon.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IUnityRewardedVideoManual.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Stats\AdditionalFeature.cs" />
+    <Compile Include="Assets\Scripts\SeparatorAttribute.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\Components\ColorGradingComponent.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\KriptoFX\Realistic Effects Pack v1\Scripts\EffectSettings\RFX1_EffectSettingColor.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Qwest\CounterTask.cs" />
+    <Compile Include="Assets\Scripts\Game\Weapons\UIWeaponHelper.cs" />
+    <Compile Include="Assets\Made_Fx\2D_2019\Toon1\Demo\Scripts\ETFXSceneManager.cs" />
+    <Compile Include="Assets\Scripts\MiamiGames\Mech\MechBigfootController.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CharacterController\HitEffectType.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CharacterController\Enums\MeleeAttackState.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Demo\DemoMain.cs" />
+    <Compile Include="Assets\Scripts\Game\Enemy\RagdollState.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Qwest\LeaveACarAtPointTaskNode.cs" />
+    <Compile Include="Assets\NAT - Avocado Shark\Resources\AdUnitSettings.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2020\MagicalUltimate\Sources\Scripts\FX_Spawner.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CharacterController\AttackState.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Input\FPSInput.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Cheats\CheatManager.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\Internal\fsKeyValuePairConverter.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Utils\Popup.cs" />
+    <Compile Include="Assets\KriptoFX\MuzzleFlashes\Scripts\Demo\FPSDemoGUI.cs" />
+    <Compile Include="Assets\Scripts\Joystick.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Events\CameraTrigger.cs" />
+    <Compile Include="Assets\KriptoFX\Realistic Effects Pack v4\Scripts\RFX4_ReplaceMaterialByTime.cs" />
+    <Compile Include="Assets\Scripts\IAPMiamiManager.cs" />
+    <Compile Include="Assets\AppOpenAds\AppOpenAdManager.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Hyperbit Arsenal\Demo\Scripts\HyperbitFireProjectile.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\fsContext.cs" />
+    <Compile Include="Assets\Scripts\Game\Traffic\TrafficLightsGenerator.cs" />
+    <Compile Include="Assets\Scripts\UnitySampleAssets\CrossPlatformInput\CrossPlatformInputManager.cs" />
+    <Compile Include="Assets\Scripts\SelectiveStringAttribute.cs" />
+    <Compile Include="Assets\Scripts\UnitySampleAssets\CrossPlatformInput\PlatformSpecific\MobileInput.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\Models\BloomModel.cs" />
+    <Compile Include="Assets\Scripts\PlayerSetuperHelper.cs" />
+    <Compile Include="Assets\Scripts\Prefabs\Managers\Shop\Prefabs\StatView.cs" />
+    <Compile Include="Assets\NAT - Avocado Shark\Scripts\Native_Large_Static_Ad_Script.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\BikeControlPanel.cs" />
+    <Compile Include="Assets\Made_Fx\2D_2019\KriptoFX\Realistic Effects Pack v4\Effects\Scripts\Rendering\RFX4_RenderTransparentDistortion.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CameraEffects\Perlin.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Input\Mobile\Rotate.cs" />
+    <Compile Include="Assets\Scripts\Common\Analytics\EventsActionsTypes.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Modes\LookAtCameraMode.cs" />
+    <Compile Include="Assets\Scripts\Game\Enemy\WeaponForSmartHumanoidNPC.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\PerformanceTest.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Modes\Type.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\PoolEventProcessor.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\KriptoFX\Realistic Effects Pack v1\Scripts\RFX1_StartDelay.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Extras\RTSProjector.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CameraEffects\Yes.cs" />
+    <Compile Include="Assets\Scripts\UnitySampleAssets\CrossPlatformInput\MobileControlRig.cs" />
+    <Compile Include="Assets\Scripts\RopeNamespace\Rope.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\CarControlPanel.cs" />
+    <Compile Include="Assets\Scripts\Game\Weapons\HomingProjectile.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Hyperbit Arsenal\Demo\Scripts\HyperbitDragMouseOrbit.cs" />
+    <Compile Include="Assets\KriptoFX\Realistic Effects Pack v4\Scripts\RFX4_UVScroll.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\Internal\fsIEnumerableConverter.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
+    <Compile Include="Assets\Scripts\Game\Enemy\RagdollWakeUper.cs" />
+    <Compile Include="Assets\Scripts\CutscenePlayerMoveToPoint.cs" />
+    <Compile Include="Assets\Scripts\Game\GameAchievements\AchievmentInfo.cs" />
+    <Compile Include="Assets\Scripts\IKanimations\PreviewHandTarget.cs" />
+    <Compile Include="Assets\Made_Fx\2D_2019\Toon1\Demo\ParticleEffectsShowcase\Scripts\PEButtonScript.cs" />
+    <Compile Include="Assets\FixError.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CameraEffects\FractalNoise.cs" />
+    <Compile Include="Assets\Scripts\Game\Weapons\TraceSFX.cs" />
+    <Compile Include="Assets\Scripts\GameItemPack.cs" />
+    <Compile Include="Assets\Made_Fx\2D_2019\KriptoFX\Realistic Effects Pack v4\Effects\Scripts\Rendering\RFX4_PerPlatformSettings.cs" />
+    <Compile Include="Assets\Scripts\JoyPad.cs" />
+    <Compile Include="Assets\Scripts\Game\PickUps\WeaponPickup.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\KriptoFX\Realistic Effects Pack v1\Scripts\Curves\RFX1_ShaderProperties.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\SectorManager.cs" />
+    <Compile Include="Assets\Scripts\Game\Shop\ShopInfoPanelPowerUp.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Stats\LevelManager.cs" />
+    <Compile Include="Assets\Scripts\Game\Shop\ShopInfoPanelManager.cs" />
+    <Compile Include="Assets\RopeHeroViceCity\UI_Features\UI_Map\Scripts\UI_Map.cs" />
+    <Compile Include="Assets\Scripts\fsResult.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Qwest\BaseTask.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\HelpfulAds\HealingAds.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Archanor\Sci-Fi Arsenal\InteractiveDemo\Demo Scripts\SciFiBeamScript.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\UIMarkManager.cs" />
+    <Compile Include="Assets\RopeHeroViceCity\Scripts\UI\UIButton.cs" />
+    <Compile Include="Assets\Scripts\AsyncSceneLoader.cs" />
+    <Compile Include="Assets\KriptoFX\MuzzleFlashes\Scripts\FPSRandomRotateAngle.cs" />
+    <Compile Include="Assets\Scripts\HideMe.cs" />
+    <Compile Include="Assets\Scripts\Skill\IceWall.cs" />
+    <Compile Include="Assets\KriptoFX\Realistic Effects Pack v4\Scripts\RFX4_RotateAround.cs" />
+    <Compile Include="Assets\Scripts\Game\Shop\PreviewManager.cs" />
+    <Compile Include="Assets\Scripts\Game\Vehicle\VehicleDoor.cs" />
+    <Compile Include="Assets\KriptoFX\Realistic Effects Pack v4\Scripts\EffectSettings\RFX4_EffectSettingProjectile.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Examples\TestCustomInput.cs" />
+    <Compile Include="Assets\KriptoFX\Realistic Effects Pack v4\Scripts\EffectSettings\RFX4_EffectSettingPhysxForce.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\GabrielAguiarProductions\Unique_Projectiles_Volume_1\Scripts\ParticleSystemController.cs" />
+    <Compile Include="Assets\Scripts\GameplayUtils.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IronSourceBannerAndroid.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\HelpfulAds\HelpfullAdsManager.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\KriptoFX\Realistic Effects Pack v1\Scripts\Curves\RFX1_LightCurves.cs" />
+    <Compile Include="Assets\Scripts\Game\Mech\MechAnimationController.cs" />
+    <Compile Include="Assets\KriptoFX\Realistic Effects Pack v4\Scene\RFX4_DemoGUI.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Input\Mobile\TouchStatus.cs" />
+    <Compile Include="Assets\Scripts\RopeNamespace\RopePointsMaker.cs" />
+    <Compile Include="Assets\AdjustAds\DontDestroyOnLoad.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\fsObjectAttribute.cs" />
+    <Compile Include="Assets\Scripts\ScreenUtils.cs" />
+    <Compile Include="Assets\RopeHeroViceCity\UI_Features\DailyReward\Scripts\DailyBonusData.cs" />
+    <Compile Include="Assets\Scripts\Game\Enemy\BaseControllerNPC.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Archanor\Sci-Fi Arsenal\Sci-Fi Effects\Scripts\SciFiLightFade.cs" />
+    <Compile Include="Assets\Made_Fx\2D_2019\Toon1\Demo\Scripts\ETFXLoopScript.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IronSourceMediationSettings.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Config\OrbitConfig.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\Components\FxaaComponent.cs" />
+    <Compile Include="Assets\Scripts\Game\Items\GameItemPlayerChanger.cs" />
+    <Compile Include="Assets\FindLostFont.cs" />
+    <Compile Include="Assets\Scripts\Game\Enemy\SmartHumanoidCollisionTrigger.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CameraEffects\Type.cs" />
+    <Compile Include="Assets\KriptoFX\Realistic Effects Pack v4\Scripts\ParticleSysem\RFX4_Turbulence.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IronSourceRewardedVideoManualAndroid.cs" />
+    <Compile Include="Assets\RopeHeroViceCity\UI_Features\UI_Setting\Scripts\UI_Setting.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\PlayerInteractionsManager.cs" />
+    <Compile Include="Assets\Scripts\Game\Weapons\WeaponSet.cs" />
+    <Compile Include="Assets\KriptoFX\Realistic Effects Pack v4\Scripts\RFX4_TextureShaderProperties.cs" />
+    <Compile Include="Assets\Made_Fx\2D_2019\2D Laser Beams\Sample Scene\ButtonAnimation.cs" />
+    <Compile Include="Assets\Scripts\Game\PickUps\BulletsPickup.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\NoneControllerPanel.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\SlowUpdateProc.cs" />
+    <Compile Include="Assets\Made_Fx\2D_2019\KriptoFX\Realistic Effects Pack v4\Effects\Scripts\RFX4_CustomLight.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Sci-Fi VFX\Scripts\Materialization\ShaderParameterSetter.cs" />
+    <Compile Include="Assets\Scripts\Game\Items\GameItemSuperLanding.cs" />
+    <Compile Include="Assets\Scripts\AxisTouchButton.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IUnitySegment.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IronSourceConstants.cs" />
+    <Compile Include="Assets\Scripts\Code\Game\Race\UI\UiRaceManager.cs" />
+    <Compile Include="Assets\Scripts\UISetUpHelper.cs" />
+    <Compile Include="Assets\Scripts\Game\Traffic\Node.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IronSourceRewardedVideoEvents.cs" />
+    <Compile Include="Assets\Scripts\Game\Weapons\WeaponSlot.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\FlyCameraMode.cs" />
+    <Compile Include="Assets\Scripts\Common\Analytics\FPSCounter.cs" />
+    <Compile Include="Assets\EventDispatcher\EventID.cs" />
+    <Compile Include="Assets\Scripts\PlaySoundTypeOnAnimation.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CharacterController\Enums\RangedAttackState.cs" />
+    <Compile Include="Assets\KriptoFX\Realistic Effects Pack v4\Scene\RFX4_FPS.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Qwest\CollectItemTaskNode.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\MetroManager.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Qwest\QwestVehiclePoint.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\MiamiSerializier.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Pixel Arsenal\Scripts\PixelArsenalLightFade.cs" />
+    <Compile Include="Assets\Scripts\Game\Managers\SoundSource.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\ControlableObjectRespawner.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IronSourceImpressionDataAndroid.cs" />
+    <Compile Include="Assets\Scripts\Game\Shop\ShopLinks.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Qwest\MassacreTask.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Archanor\Sci-Fi Arsenal\InteractiveDemo\Demo Scripts\SciFiLoopScript.cs" />
+    <Compile Include="Assets\Scripts\Game\MiniMap\MiniMap.cs" />
+    <Compile Include="Assets\Scripts\WinnerStarsController.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Modes\RPGCameraMode.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Input\Mobile\ControlSide.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Input\RPGInput.cs" />
+    <Compile Include="Assets\MyTools\Unity-Logs-Viewer\Reporter\ReporterGUI.cs" />
+    <Compile Include="Assets\Scripts\Game\Items\GameItemWeapon.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Archanor\Sci-Fi Arsenal\InteractiveDemo\Demo Scripts\SciFiButtonScript.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\HelpfulAds\TimeAds.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Config\DeadConfig.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IronSourceIAgent.cs" />
+    <Compile Include="Assets\Scripts\Game\Enemy\TalkingObject.cs" />
+    <Compile Include="Assets\Scripts\Game\Traffic\TrafficSlider.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Qwest\QwestTimerManager.cs" />
+    <Compile Include="Assets\Scripts\Utils\PlayerPrefsX.cs" />
+    <Compile Include="Assets\Scripts\Game\Enemy\ActionState.cs" />
+    <Compile Include="Assets\KriptoFX\Realistic Effects Pack v4\Scripts\ParticleSysem\RFX4_ParticleLight.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\Internal\fsPrimitiveConverter.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Qwest\ComboTaskNode.cs" />
+    <Compile Include="Assets\Scripts\Game\Traffic\CivilianWeightObject.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Pixel Arsenal\Scripts\PixelArsenalRotation.cs" />
+    <Compile Include="Assets\Scripts\Game\PickUps\CollectionPickup.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2020\MagicalUltimate\Sources\Scripts\RaisingWall.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Hyperbit Arsenal\Scripts\HyperbitRotation.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\fsData.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Input\InputWrapper.cs" />
+    <Compile Include="Assets\Scripts\OfflineAdsBanner.cs" />
+    <Compile Include="Assets\Scripts\Game\Effects\Explosion.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Stats\StatsManager.cs" />
+    <Compile Include="Assets\Scripts\SpeedEffect.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\Internal\fsDateConverter.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\Internal\DirectConverters\Rect_DirectConverter.cs" />
+    <Compile Include="Assets\Scripts\BackgroundMusic.cs" />
+    <Compile Include="Assets\Scripts\PrevewAnimationController.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2020\MagicalUltimate\Sources\Scripts\FX_AddForceForward.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\HelpfulAds\MoneyAds.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\UIMarkViewBase.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
+    <Compile Include="Assets\Scripts\Game\Shop\ShopElement.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\KriptoFX\Realistic Effects Pack v1\Scripts\RFX1_ParticleCollisionDecal.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Qwest\UniversalReward.cs" />
+    <Compile Include="Assets\Scripts\Game\Shop\SalesManager.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\fsDuplicateVersionNameException.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\Components\ChromaticAberrationComponent.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Modes\FPSCameraMode.cs" />
+    <Compile Include="Assets\Scripts\Game\PickUps\MoneyPickup.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2020\MagicalUltimate\Sources\Scripts\FX_Camera.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IronSourceBannerLevelPlayAndroid.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Pixel Arsenal\Demo\Scripts\PixelArsenalDragMouseOrbit.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\Components\BuiltinDebugViewsComponent.cs" />
+    <Compile Include="Assets\Scripts\Game\Weapons\DialogBuyGemsSlotHelper.cs" />
+    <Compile Include="Assets\Scripts\GameItemClothes.cs" />
+    <Compile Include="Assets\Scripts\GarageManager.cs" />
+    <Compile Include="Assets\Scripts\Game\DialogSystem\DialogManager.cs" />
+    <Compile Include="Assets\AdjustAds\AdManager.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Stats\CharacterStat.cs" />
+    <Compile Include="Assets\Scripts\BackButton.cs" />
+    <Compile Include="Assets\Scripts\BonusInfoPanelManager.cs" />
+    <Compile Include="Assets\RopeHeroViceCity\Scripts\Gampelay\ResourcesManager.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\UnderwaterEffect.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Stats\UpgradeElement.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Input\PositionFilter.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Sci-Fi VFX\Scripts\BeamWeapon\BeamWeapon.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\KriptoFX\Realistic Effects Pack v1\DemoResources\Scripts\RFX1_DemoGUI.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\Internal\DirectConverters\Keyframe_DirectConverter.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2020\MagicalUltimate\Sources\Scripts\FX_RandomScale.cs" />
+    <Compile Include="Assets\Scripts\Game\Vehicle\DrivableCar.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\Attributes\TrackballGroupAttribute.cs" />
+    <Compile Include="Assets\AppOpenAds\AppOpenAdLauncher.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\StashHelper.cs" />
+    <Compile Include="Assets\Scripts\Constants.cs" />
+    <Compile Include="Assets\Scripts\Code\Game\Race\Utils\RaceUtils.cs" />
+    <Compile Include="Assets\Scripts\Game\Vehicle\GarageSensor.cs" />
+    <Compile Include="Assets\FacebookSDK\Examples\Scripts\SubMenus\DialogShare.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Config\FlyConfig.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Particlecollection_bullet\Plugins\Effect\Script\CameraTarget.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\Internal\fsNullableConverter.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Particlecollection_bullet\Plugins\Effect\Script\EffectController.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Input\GameInput.cs" />
+    <Compile Include="Assets\Scripts\UIColorShine.cs" />
+    <Compile Include="Assets\Scripts\InspectorButtonAttribute.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\MarkListBase.cs" />
+    <Compile Include="Assets\MyTools\Unity-Logs-Viewer\Reporter\MultiKeyDictionary.cs" />
+    <Compile Include="Assets\Scripts\Game\Tools\FastMath.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\Internal\DirectConverters\LayerMask_DirectConverter.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Quality\QualityManager.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CharacterController\PlayerManager.cs" />
+    <Compile Include="Assets\Scripts\IAPExample.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\PostProcessingBehaviour.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\Models\EyeAdaptationModel.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Utils\Math.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IUnityLevelPlayRewardedVideo.cs" />
+    <Compile Include="Assets\Scripts\EffectAreaProjectile.cs" />
+    <Compile Include="Assets\Scripts\Game\Weapons\MeleeHitAssistant.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\KriptoFX\Realistic Effects Pack v1\PostEffects\Mobile\RFX1_DistortionAndBloom.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\Utils\GraphicsUtils.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Qwest\CounterTaskNode.cs" />
+    <Compile Include="Assets\Scripts\Game\Weapons\MinigunRangedWeapon.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\fsTypeExtensions.cs" />
+    <Compile Include="Assets\Scripts\Game\Shop\ShopManager.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\MechControlPanel.cs" />
+    <Compile Include="Assets\Scripts\Game\Items\PowerUpTimeStatusPanel.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CharacterController\EyeLaserController.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Qwest\ReachPointTask.cs" />
+    <Compile Include="Assets\Scripts\Game\Enemy\RagdollDrowning.cs" />
+    <Compile Include="Assets\Scripts\Game\Items\GameItemRope.cs" />
+    <Compile Include="Assets\Scripts\Game\Vehicle\BikeAnimatorController.cs" />
+    <Compile Include="Assets\AdjustAds\AnalyticsController.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CharacterController\Tweener.cs" />
+    <Compile Include="Assets\RopeHeroViceCity\UI_Features\UI_InGame\Scripts\TryWeapon\TryWeaponData.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\RadioManager.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\CharacterFlyControlPanel.cs" />
+    <Compile Include="Assets\AdjustAds\FirebaseManager.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\RespawnedObjectType.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\ErbGameArt\3D Lasers Pack\Demo scene lasers\EGA_DemoLasers.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CharacterController\LookAtWeights.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\Components\VignetteComponent.cs" />
+    <Compile Include="Assets\Scripts\Game\Shop\AmmoShop.cs" />
+    <Compile Include="Assets\Made_Fx\2D_2019\Tazo_fx\Script\AnimateTiledTextureOnTrail.cs" />
+    <Compile Include="Assets\Scripts\Prefabs\Managers\Shop\Prefabs\StatViewVehicles.cs" />
+    <Compile Include="Assets\Stickman_Rope\Military Aircraft Pack\Demo Scene\Scripts\DisplayController.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\Models\FogModel.cs" />
+    <Compile Include="Assets\Scripts\GameItemSkin.cs" />
+    <Compile Include="Assets\Scripts\Game\Shop\PreviewItemPositions.cs" />
+    <Compile Include="Assets\Scripts\Game\Items\GameItem.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\Components\TaaComponent.cs" />
+    <Compile Include="Assets\Scripts\ClimbingSensors.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\KriptoFX\Realistic Effects Pack v1\DemoResources\Scripts\RFX1_FPS.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Pixel Arsenal\Demo\Scripts\PixelArsenalSceneSelect.cs" />
+    <Compile Include="Assets\NAT - Avocado Shark\Scripts\Infeed_Ad_Script.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Extras\CaveWorm.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Modes\CameraMode.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Sci-Fi VFX\Scripts\BlasterWeapon\BlasterBullet.cs" />
+    <Compile Include="Assets\Scripts\Game\Weapons\WeaponArchetype.cs" />
+    <Compile Include="Assets\Scripts\Game\Mech\MechGunController.cs" />
+    <Compile Include="Assets\Scripts\Code\Game\Shop\InfoPanels\ShopInfoPanelVehicles.cs" />
+    <Compile Include="Assets\AdjustAds\TrackingConstants.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\Models\VignetteModel.cs" />
+    <Compile Include="Assets\Scripts\BaseSoundController.cs" />
+    <Compile Include="Assets\EventDispatcher\EventDispatcher.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\FpsTest.cs" />
+    <Compile Include="Assets\Scripts\BaseComboVFX.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\Models\GrainModel.cs" />
+    <Compile Include="Assets\KriptoFX\MuzzleFlashes\Scripts\FPSShaderFloatCurves.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\Internal\fsWeakReferenceConverter.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\PlayerSurfaceSensor.cs" />
+    <Compile Include="Assets\Scripts\EffectArea.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\PlayerInitializer.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\HelpfulAds\AmmoAds.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Stats\CharacterStatDisplay.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IronSourceInterstitialEvents.cs" />
+    <Compile Include="Assets\Made_Fx\2D_2019\Tazo_fx\Script\DestroySelf.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\PostProcessingModel.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Qwest\LeaveACarAtPointTask.cs" />
+    <Compile Include="Assets\Scripts\Game\PickUps\QuestPickUp.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Qwest\TeleportPlayerToPositionTaskNode.cs" />
+    <Compile Include="Assets\Scripts\Code\Game\Race\Racer.cs" />
+    <Compile Include="Assets\KriptoFX\Realistic Effects Pack v4\Scripts\ParticleSysem\RFX4_ParticleTrail.cs" />
+    <Compile Include="Assets\Scripts\Game\Vehicle\DrivableBike.cs" />
+    <Compile Include="Assets\Scripts\RigidBodySlowDown.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Events\CameraEvent.cs" />
+    <Compile Include="Assets\Scripts\DebugController.cs" />
+    <Compile Include="Assets\RopeHeroViceCity\UI_Features\DailyMissionManager\Scripts\DailyMissionManager.cs" />
+    <Compile Include="Assets\Scripts\Game\Items\SkinSlot.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\InputButton.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Portal Particle\Scrpt\CameraHolder.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\AmbientSoundPoint.cs" />
+    <Compile Include="Assets\KriptoFX\MuzzleFlashes\Scripts\MaterialType.cs" />
+    <Compile Include="Assets\IronSource\Scripts\iOSAgent.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\Internal\fsReflectionUtility.cs" />
+    <Compile Include="Assets\RopeHeroViceCity\Scripts\UI\UICanvasKey.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\MainThreadExecuter.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CollisionSystem\TargetCollision.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Config\LookAtConfig.cs" />
+    <Compile Include="Assets\KriptoFX\Realistic Effects Pack v4\Scripts\Curves\RFX4_ShaderColorGradient.cs" />
+    <Compile Include="Assets\Scripts\Skill\BaseSkills.cs" />
+    <Compile Include="Assets\Scripts\BaseGameObjectsVFX.cs" />
+    <Compile Include="Assets\RopeHeroViceCity\Prefabs\QuestMark\QwestMark.cs" />
+    <Compile Include="Assets\Scripts\Game\Items\GameItemPowerUp.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IronSourceJSON.cs" />
+    <Compile Include="Assets\Made_Fx\2D_2019\Toon1\Demo\ParticleEffectsShowcase\Scripts\UICanvasManager.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Input\InputManager.cs" />
+    <Compile Include="Assets\Scripts\Game\Enemy\SpecificNPCLinks.cs" />
+    <Compile Include="Assets\Scripts\Game\PostEffect\PostEffectDrawingCrosshatch.cs" />
+    <Compile Include="Assets\Scripts\Game\Enemy\NPCMeleeHitAssistant.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\PlayerInfoManager.cs" />
+    <Compile Include="Assets\Scripts\Game\UI\PlayerIntInfoDisplay.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Utils\CursorLocking.cs" />
+    <Compile Include="Assets\Scripts\FastSpawnArea.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Input\Mobile\TouchProcessor.cs" />
+    <Compile Include="Assets\Scripts\Code\Game\Race\RacePositionController.cs" />
+    <Compile Include="Assets\Scripts\Code\Managers\QuestsManager\Tasks\RaceTask.cs" />
+    <Compile Include="Assets\RopeHeroViceCity\UI_Features\UI_Lobby\Scripts\UIMenu.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\KriptoFX\Realistic Effects Pack v1\Scripts\Curves\RFX1_ProjectorSizeCurves.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\KriptoFX\Realistic Effects Pack v1\Scripts\Curves\RFX1_ShaderFloatCurve.cs" />
+    <Compile Include="Assets\Scripts\PrefabsSetuper.cs" />
+    <Compile Include="Assets\Scripts\LevelsProfile.cs" />
+    <Compile Include="Assets\Scripts\TurnOffIn10sec.cs" />
+    <Compile Include="Assets\Scripts\Game\GameAchievements\AchievmentsViewController.cs" />
+    <Compile Include="Assets\Scripts\Game\Weapons\RangeWeaponProjectile.cs" />
+    <Compile Include="Assets\KriptoFX\MuzzleFlashes\Scripts\Rendering\FPS_CustomLight.cs" />
+    <Compile Include="Assets\RopeHeroViceCity\UI_Features\UI_Shop\Scripts\UI_Shop.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\Components\GrainComponent.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Utils\RingPrimitive.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CameraEffects\ExplosionCFX.cs" />
+    <Compile Include="Assets\NAT - Avocado Shark\Scripts\Native_Small_Static_Ad_Format.cs" />
+    <Compile Include="Assets\Scripts\Game\Weapons\EnergyAmmoRangedWeapon.cs" />
+    <Compile Include="Assets\RopeHeroViceCity\UI_Features\UI_InGame\Scripts\TryWeapon\TryActionGun.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\PlaySoundOnAnimation.cs" />
+    <Compile Include="Assets\Scripts\Game\Vehicle\PoliceSiren.cs" />
+    <Compile Include="Assets\KriptoFX\Realistic Effects Pack v4\Scripts\EffectSettings\RFX4_EffectSettingVisible.cs" />
+    <Compile Include="Assets\Scripts\FPSCounter.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\SuperKick.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\ControlPanel.cs" />
+    <Compile Include="Assets\KriptoFX\Realistic Effects Pack v4\Scripts\RFX4_TransformMotion.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2020\MagicalUltimate\Sources\Scripts\Wizard.cs" />
+    <Compile Include="Assets\MyTools\Unity-Logs-Viewer\Reporter\ReporterMessageReceiver.cs" />
+    <Compile Include="Assets\Scripts\Game\Shop\PlayerStoreProfile.cs" />
+    <Compile Include="Assets\Scripts\Game\Shop\PreviewDummyPositions.cs" />
+    <Compile Include="Assets\Scripts\ButtonOnUp.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Particlecollection_bullet\Plugins\Effect\Script\EffectDemo.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\KriptoFX\Realistic Effects Pack v1\Scripts\RFX1_ColorHelper.cs" />
+    <Compile Include="Assets\NativeAds\NativeAdsManager.cs" />
+    <Compile Include="Assets\Scripts\Code\Game\Race\RaceTrackManager\RaceNodeHelper.cs" />
+    <Compile Include="Assets\Scripts\LookControlsSwitcher.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Magic Spells and Popup effects\Particles\LightAnimation.cs" />
+    <Compile Include="Assets\Scripts\Game\Items\GameItemSuperKick.cs" />
+    <Compile Include="Assets\Scripts\ControlButtonManager.cs" />
+    <Compile Include="Assets\Scripts\Game\Items\StuffManager.cs" />
+    <Compile Include="Assets\RopeHeroViceCity\Scripts\UI\Common\DataUICanvas.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2020\MagicalUltimate\Sources\Scripts\RainFall.cs" />
+    <Compile Include="Assets\Scripts\Game\Traffic\NodeLink.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\PerformanceDetecting.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IUnityImpressionData.cs" />
+    <Compile Include="Assets\Scripts\Game\GameAchievements\AchievmentPanel.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\KriptoFX\Realistic Effects Pack v1\Scripts\Curves\RFX1_AudioPitchCurves.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IronSourceAdInfo.cs" />
+    <Compile Include="Assets\Scripts\SkinTest.cs" />
+    <Compile Include="Assets\Scripts\Achivements\GetNaxeexCollectionAchievement.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\KriptoFX\Realistic Effects Pack v1\Scripts\Curves\RFX1_ShaderColorGradient.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Qwest\StealAVehicleTask.cs" />
+    <Compile Include="Assets\Scripts\ExtensionMethods.cs" />
+    <Compile Include="Assets\KriptoFX\Realistic Effects Pack v4\Scripts\RFX4_UVAnimation.cs" />
+    <Compile Include="Assets\Made_Fx\2D_2019\FX_SwordEffects_Volume01\Scripts\ParticleRotation.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2020\MagicalUltimate\Sources\Scripts\FX_FadeToGround.cs" />
+    <Compile Include="Assets\Scripts\Skill\SkillManager.cs" />
+    <Compile Include="Assets\Scripts\SkyboxRotate.cs" />
+    <Compile Include="Assets\FindTreePath.cs" />
+    <Compile Include="Assets\Scripts\AnimatePanel.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\Internal\fsDictionaryConverter.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\PseudoDynamicObject.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Quality\QualitySlider.cs" />
+    <Compile Include="Assets\Scripts\Game\Effects\ExplodableTypes.cs" />
+    <Compile Include="Assets\Scripts\DamageBurstCombo.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\HelpfulAds\RepairAds.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Qwest\GameEventManager.cs" />
+    <Compile Include="Assets\Scripts\HPRegenCombo.cs" />
+    <Compile Include="Assets\Made_Fx\2D_2019\Toon1\Demo\ParticleEffectsShowcase\Scripts\PEDestoryTimed.cs" />
+    <Compile Include="Assets\RopeHeroViceCity\UI_Features\UI_Achivement\Scripts\UI_Achivement.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Input\Mobile\Zoom.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2020\MagicalUltimate\Sources\Scripts\FX_ScaleUp.cs" />
+    <Compile Include="Assets\Scripts\SuperPowerDialogPanel.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\Models\UserLutModel.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IronSourceSegmentAndroid.cs" />
+    <Compile Include="Assets\Scripts\ComboManager.cs" />
+    <Compile Include="Assets\Scripts\Obstacle.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IronSourceUtils.cs" />
+    <Compile Include="Assets\Scripts\ISeachProcess.cs" />
+    <Compile Include="Assets\Scripts\Game\Shop\ShopItem.cs" />
+    <Compile Include="Assets\Scripts\Game\MiniMap\SnapShotForMiniMap.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Modes\DeadCameraMode.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\CPUTest.cs" />
+    <Compile Include="Assets\Scripts\LevelReset.cs" />
+    <Compile Include="Assets\Scripts\Game\Weapons\RangedWeaponType.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CharacterController\ObstacleType.cs" />
+    <Compile Include="Assets\Scripts\Code\Game\Race\Anim\Countdown.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2020\MagicalUltimate\Sources\Scripts\FX_Position.cs" />
+    <Compile Include="Assets\NAT - Avocado Shark\Scripts\Scene_Select.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\KTK_FireWorks_Effects_Volume1\Scripts\SoundPlayTime.cs" />
+    <Compile Include="Assets\KriptoFX\Realistic Effects Pack v4\Scripts\RFX4_ColorHelper.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Qwest\BuyGameItemTaskNode.cs" />
+    <Compile Include="Assets\AdvancedPlayerPrefsWindow\DemoScene\GUIView.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\Models\MotionBlurModel.cs" />
+    <Compile Include="Assets\Scripts\UISpriteColorBase.cs" />
+    <Compile Include="Assets\RopeHeroViceCity\UI_Features\DailyReward\Scripts\UI_DailyReward.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Stats\StatBar.cs" />
+    <Compile Include="Assets\Scripts\TrafficNodeClick.cs" />
+    <Compile Include="Assets\Scripts\Achivements\GetStoreAchievement.cs" />
+    <Compile Include="Assets\Scripts\Code\Game\Race\RaceManager.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\KriptoFX\Realistic Effects Pack v1\Scripts\Curves\RFX1_ScaleCurves.cs" />
+    <Compile Include="Assets\Scripts\DistanceComparer.cs" />
+    <Compile Include="Assets\Scripts\MyCustomIK.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\ObjectRespawner.cs" />
+    <Compile Include="Assets\KriptoFX\Realistic Effects Pack v4\Scripts\Curves\RFX4_AudioCurves.cs" />
+    <Compile Include="Assets\Scripts\FireEyes.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\KriptoFX\Realistic Effects Pack v1\Scripts\RFX1_AnimatorEvents.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2020\KTK_Aura_Effects_Volume1\Scripts\UvScroll.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\KriptoFX\Realistic Effects Pack v1\PostEffects\Mobile\RFX1_BloomMobile.cs" />
+    <Compile Include="Assets\Scripts\UnitySampleAssets\CrossPlatformInput\ShowObjectIfStaminaEnd.cs" />
+    <Compile Include="Assets\Scripts\Game\Enemy\ForceGetOutReset.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Stats\UpgradeManager.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CameraEffects\Fall.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CharacterController\Faction.cs" />
+    <Compile Include="Assets\Scripts\Game\MiniMap\MarkButton.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Extras\BloodSFX.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IUnityLevelPlayInterstitial.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Config\FPSConfig.cs" />
+    <Compile Include="Assets\0_Gplay\UseProfile.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Training\ClickableReverse.cs" />
+    <Compile Include="Assets\Scripts\PreviewRotator.cs" />
+    <Compile Include="Assets\Made_Fx\2D_2019\Tazo_fx\Script\tazo_UVScroller.cs" />
+    <Compile Include="Assets\Scripts\Game\Weapons\MeleeWeapon.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\TypeOfSound.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\Components\UserLutComponent.cs" />
+    <Compile Include="Assets\Scripts\OneFrameFixedUpdate.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IUnityLevelPlayBanner.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CollisionSystem\CameraCollision.cs" />
+    <Compile Include="Assets\Scripts\Game\Mech\DrivableMech.cs" />
+    <Compile Include="Assets\Scripts\ShootinIKHandler.cs" />
+    <Compile Include="Assets\Scripts\Game\Effects\Effect.cs" />
+    <Compile Include="Assets\Scripts\Code\Game\Race\Race.cs" />
+    <Compile Include="Assets\Scripts\Game\Items\GameItemFly.cs" />
+    <Compile Include="Assets\Scripts\DialogSlotHelper.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2020\StylizedExplosionPack\scripts\destroyMe.cs" />
+    <Compile Include="Assets\Scripts\BaseBuff.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Config\RTSConfig.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\KriptoFX\Realistic Effects Pack v1\Scripts\RFX1_ParticleInfinite.cs" />
+    <Compile Include="Assets\Scripts\PreviewIKHandler.cs" />
+    <Compile Include="Assets\Scripts\FireEyesTracer.cs" />
+    <Compile Include="Assets\Scripts\Game\Vehicle\CarController.cs" />
+    <Compile Include="Assets\Scripts\LevelInfo.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Qwest\ReachPointTaskNode.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Training\TrainingToggle.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Qwest\QwestProfile.cs" />
+    <Compile Include="Assets\Scripts\Game\Vehicle\BikeController.cs" />
+    <Compile Include="Assets\Scripts\UnitySampleAssets\CrossPlatformInput\TiltInput.cs" />
+    <Compile Include="Assets\RopeHeroViceCity\UI_Features\UI_Quest\Scripts\UI_Quest.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Config\EmptyConfig.cs" />
+    <Compile Include="Assets\Scripts\Game\Vehicle\SimpleWheelController.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\KriptoFX\Realistic Effects Pack v1\Scripts\EffectSettings\RFX1_EffectSettingProjectile.cs" />
+    <Compile Include="Assets\Made_Fx\2D_2019\KriptoFX\Realistic Effects Pack v4\Effects\Scripts\ParticleSysem\RFX4_ParticleGravityDelay.cs" />
+    <Compile Include="Assets\RopeHeroViceCity\UI_Features\UI_UniversalPopUp\Scripts\UI_GeneralPopup.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Qwest\BuyGameItemTask.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\Internal\fsGuidConverter.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2020\KTK_Aura_Effects_Volume1\Scripts\Switch_ParticleLoop_OnOff.cs" />
+    <Compile Include="Assets\Scripts\UIHighlightsManager.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Demo\DummyDemo.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CharacterController\AnimationController.cs" />
+    <Compile Include="Assets\Scripts\Game\Enemy\SmartHumanoidAnimationController.cs" />
+    <Compile Include="Assets\Scripts\TestUI.cs" />
+    <Compile Include="Assets\RopeHeroViceCity\Scripts\Gampelay\EventManager.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\ControlsType.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Utils\CameraInstance.cs" />
+    <Compile Include="Assets\Scripts\Game\Weapons\DialogSuperpowerSlotHelper.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\fsForwardAttribute.cs" />
+    <Compile Include="Assets\Scripts\TouchPad.cs" />
+    <Compile Include="Assets\KriptoFX\Realistic Effects Pack v4\Scripts\RFX4_DeactivateRigidbodyByTime.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Config\DebugConfig.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Utils\Profiler.cs" />
+    <Compile Include="Assets\Scripts\Game\Vehicle\Autopilot.cs" />
+    <Compile Include="Assets\Scripts\Game\Shop\DialogSkinSlotHelper.cs" />
+    <Compile Include="Assets\KriptoFX\MuzzleFlashes\Scripts\Demo\FPSDemoReactivator.cs" />
+    <Compile Include="Assets\Scripts\Game\Weapons\WeaponTypes.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Config\CollisionConfig.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CharacterController\DummyPlayer.cs" />
+    <Compile Include="Assets\Scripts\MenuPreSetter.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\ActivateOnTriggerStayHack.cs" />
+    <Compile Include="Assets\Scripts\Game\Tools\PlayerSetuper.cs" />
+    <Compile Include="Assets\Scripts\Game\Vehicle\VehicleSource.cs" />
+    <Compile Include="Assets\Scripts\Game\UI\UIGame.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Input\Mobile\ControlType.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Qwest\QwestCompletePanel.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\PerformanceDetectingManager.cs" />
+    <Compile Include="Assets\KriptoFX\Realistic Effects Pack v4\Scripts\RFX4_RaycastCollision.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CharacterController\AdvancedSettings.cs" />
+    <Compile Include="Assets\Scripts\MiamiGames\Mech\MechController.cs" />
+    <Compile Include="Assets\Scripts\Game\UI\PlayerExperienceDisplay.cs" />
+    <Compile Include="Assets\RopeHeroViceCity\UI_Features\UI_InGame\Scripts\TryWeapon\TryWeaponAction.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Input\Input.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CharacterController\GunSFX.cs" />
+    <Compile Include="Assets\Made_Fx\2D_2019\Victory1\Scripts\starFxController.cs" />
+    <Compile Include="Assets\Scripts\Game\Weapons\DialogWeaponSlotHelper.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\KriptoFX\Realistic Effects Pack v1\Scripts\Curves\RFX1_WindCurves.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\fsConverter.cs" />
+    <Compile Include="Assets\Scripts\Game\Weapons\ShotSFXType.cs" />
+    <Compile Include="Assets\Scripts\SearchProcess.cs" />
+    <Compile Include="Assets\Scripts\CameraSwitch.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CharacterController\Defence.cs" />
+    <Compile Include="Assets\Scripts\Game\MiniMap\ZoomPinch.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Config\ThirdPersonConfig.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Modes\DebugCameraMode.cs" />
+    <Compile Include="Assets\Scripts\Achivements\GetLevellAchievement.cs" />
+    <Compile Include="Assets\Scripts\Game\Vehicle\TransformerAutopilot.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CharacterController\HitEntity.cs" />
+    <Compile Include="Assets\Scripts\Wheel.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\KriptoFX\Realistic Effects Pack v1\Scripts\RFX1_TextureShaderProperties.cs" />
+    <Compile Include="Assets\KriptoFX\Realistic Effects Pack v4\Scripts\RFX4_CopyPosition.cs" />
+    <Compile Include="Assets\Scripts\AwardBox.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Config\RPGConfig.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Input\InputGroup.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\Models\AmbientOcclusionModel.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\KriptoFX\Realistic Effects Pack v1\PostEffects\PC\Common\MinAttribute.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\MetroPanel.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\GabrielAguiarProductions\Unique_Projectiles_Volume_1\Scripts\ProjectileMoveScript.cs" />
+    <Compile Include="Assets\Scripts\Game\Items\ItemsTypes.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CollisionSystem\VolumetricCollision.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\Internal\fsEnumConverter.cs" />
+    <Compile Include="Assets\StompyRobot\SROptions\SROptions.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2020\MagicalUltimate\Sources\Scripts\FX_Mover.cs" />
+    <Compile Include="Assets\Scripts\LevelButtonController.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\Models\BuiltinDebugViewsModel.cs" />
+    <Compile Include="Assets\KriptoFX\Realistic Effects Pack v4\Scripts\Curves\RFX4_PhysicsForceCurves.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Qwest\DriveToPointTaskNode.cs" />
+    <Compile Include="Assets\RopeHeroViceCity\UI_Features\UI_InGame\Scripts\TryWeapon\UITryWeapon.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\KriptoFX\Realistic Effects Pack v1\Scripts\RFX1_ParticlePositionPoint.cs" />
+    <Compile Include="Assets\Scripts\RacerFinished.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\KriptoFX\Realistic Effects Pack v1\Scripts\RFX1_ShieldCollisionTrigger.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Magic Spells and Popup effects\Script\DemoController.cs" />
+    <Compile Include="Assets\AdjustAds\InitScene.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2020\MagicalUltimate\Sources\Scripts\FX_HitSpawner.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Input\Mobile\BaseControl.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Demo\ZombieHUD.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\KriptoFX\Realistic Effects Pack v1\Scripts\RFX4_LocalSpaceFix.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Config\ThirdPersonConfigBIG.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Stats\StatText.cs" />
+    <Compile Include="Assets\Made_Fx\2D_2019\Tazo_fx\Script\BillBoard.cs" />
+    <Compile Include="Assets\Scripts\SlotRenderer.cs" />
+    <Compile Include="Assets\Scripts\Game\Traffic\NodeHelper.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Qwest\DirectionArrow.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\fsSerializer.cs" />
+    <Compile Include="Assets\Scripts\Prefabs\Managers\Shop\Prefabs\AdditionalFeatureVehicles.cs" />
+    <Compile Include="Assets\StompyRobot\SROptions\SROptions.Test.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CharacterController\RayHitComparer.cs" />
+    <Compile Include="Assets\FacebookSDK\Examples\Scripts\SubMenus\GraphRequest.cs" />
+    <Compile Include="Assets\Scripts\Game\Vehicle\MotorcycleController.cs" />
+    <Compile Include="Assets\Made_Fx\2D_2019\Tazo_fx\Script\ActiveSelf.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\KriptoFX\Realistic Effects Pack v1\Scripts\RFX1_ActivateGravityAfterCollision.cs" />
+    <Compile Include="Assets\Scripts\Game\Items\GameItemAccessory.cs" />
+    <Compile Include="Assets\Made_Fx\2D_2019\Water_Splashes\Scripts\Small_Splash.cs" />
+    <Compile Include="Assets\Scripts\Game\Vehicle\HelicopterSpecific.cs" />
+    <Compile Include="Assets\Scripts\LegacySystem\IO\File.cs" />
+    <Compile Include="Assets\Scripts\Game\MiniMap\MarkForMiniMap.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Training\TrainingInput.cs" />
+    <Compile Include="Assets\Scripts\Game\UI\DangerIndicator.cs" />
+    <Compile Include="Assets\Scripts\SpecialWeaponComboController.cs" />
+    <Compile Include="Assets\Scripts\IAPController.cs" />
+    <Compile Include="Assets\RopeHeroViceCity\Scripts\UI\ButtonWatchAdsGetReward.cs" />
+    <Compile Include="Assets\Scripts\Game\Enemy\SmartHumanoidWeaponController.cs" />
+    <Compile Include="Assets\Scripts\MenuPanelManager.cs" />
+    <Compile Include="Assets\Scripts\Game\Weapons\MeleeDamageTrigger.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CharacterController\PlayerRelations.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\Components\EyeAdaptationComponent.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\Models\ChromaticAberrationModel.cs" />
+    <Compile Include="Assets\FacebookSDK\Examples\Scripts\SubMenus\AccessTokenMenu.cs" />
+    <Compile Include="Assets\FacebookSDK\Examples\Scripts\SubMenus\AppLinks.cs" />
+    <Compile Include="Assets\Scripts\Game\DialogSystem\Dialog.cs" />
+    <Compile Include="Assets\TestTransparent.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\Models\ColorGradingModel.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\FreeMoneyManagerImproved.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Archanor\Sci-Fi Arsenal\InteractiveDemo\Demo Scripts\SciFiDragMouseOrbit.cs" />
+    <Compile Include="Assets\KriptoFX\Realistic Effects Pack v4\Scripts\ParticleSysem\RFX4_ParticleCollisionHandler.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\Models\ScreenSpaceReflectionModel.cs" />
+    <Compile Include="Assets\Scripts\Achivements\Achievement.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\Components\DepthOfFieldComponent.cs" />
+    <Compile Include="Assets\Scripts\MarkDetails.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CameraEffects\EffectManager.cs" />
+    <Compile Include="Assets\Scripts\Game\Weapons\AttackTargetParameters.cs" />
+    <Compile Include="Assets\FacebookSDK\Examples\Scripts\SubMenus\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Config\CarConfig.cs" />
+    <Compile Include="Assets\Made_Fx\2D_2019\Toon1\Demo\Scripts\ETFXProjectileScript.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2020\MagicalUltimate\Sources\Scripts\FX_ShakeCamera.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\KriptoFX\Realistic Effects Pack v1\Scripts\RFX1_TransformMotion.cs" />
+    <Compile Include="Assets\Scripts\Game\Weapons\WeaponManager.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\CollectionPickUpsManager.cs" />
+    <Compile Include="Assets\Scripts\SoundButtonToggle.cs" />
+    <Compile Include="Assets\KriptoFX\MuzzleFlashes\Scripts\FPSShaderColorGradient.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Input\Mobile\CameraPanel.cs" />
+    <Compile Include="Assets\Scripts\Game\Vehicle\CollisionTrigger.cs" />
+    <Compile Include="Assets\Scripts\Game\Vehicle\TankGunController.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\GabrielAguiarProductions\Unique_Projectiles_Volume_1\Scripts\CameraShakeSimpleScript.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\KriptoFX\Realistic Effects Pack v1\PostEffects\Mobile\RFX1_MobileBloomLayer.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Utils\Debug.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Extras\WaterSpraySFX.cs" />
+    <Compile Include="Assets\KriptoFX\MuzzleFlashes\Scripts\Demo\FPSFireManager.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\fsISerializationCallbacks.cs" />
+    <Compile Include="Assets\Scripts\BaseFX.cs" />
+    <Compile Include="Assets\KriptoFX\MuzzleFlashes\Scripts\FPSParticleSystemScaler.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\Internal\fsMetaProperty.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\Internal\fsForwardConverter.cs" />
+    <Compile Include="Assets\RopeHeroViceCity\UI_Features\UI_Pause\Scripts\UI_Pause.cs" />
+    <Compile Include="Assets\KriptoFX\Realistic Effects Pack v4\Scripts\Curves\RFX4_ScaleCurves.cs" />
+    <Compile Include="Assets\KriptoFX\Realistic Effects Pack v4\Scripts\EffectSettings\RFX4_EffectSettingColor.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Qwest\QwestPickupType.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\VehicleCameraMode.cs" />
+    <Compile Include="Assets\Scripts\Code\Game\Object_Respawner\ObjectBossRespawner.cs" />
+    <Compile Include="Assets\Scripts\UITemplate\Debug.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Extras\EnemyAI.cs" />
+    <Compile Include="Assets\Scripts\Game\Enemy\NPCShootingAssistant.cs" />
+    <Compile Include="Assets\Stickman_Rope\Military Aircraft Pack\Demo Scene\Scripts\TrackController.cs" />
+    <Compile Include="Assets\RopeHeroViceCity\Scripts\UI\AbsRopePopup.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\Archanor\Sci-Fi Arsenal\InteractiveDemo\Demo Scripts\SciFiFireProjectile.cs" />
+    <Compile Include="Assets\Scripts\Game\Traffic\TrafficDriver.cs" />
+    <Compile Include="Assets\KriptoFX\Realistic Effects Pack v4\Scripts\RFX4_MaterialQueue.cs" />
+    <Compile Include="Assets\Scripts\Game\UI\PlayerVipLevelDisplay.cs" />
+    <Compile Include="Assets\Scripts\UnitySampleAssets\CrossPlatformInput\ButtonHandler.cs" />
+    <Compile Include="Assets\Scripts\Game\Managers\SoundManager.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\Internal\DirectConverters\AnimationCurve_DirectConverter.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Events\EventType.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\TankControlPanel.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\Components\FogComponent.cs" />
+    <Compile Include="Assets\Scripts\StatAttribute.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CharacterWaterSensor.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Stats\UpgradePanel.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Input\Mobile\Button.cs" />
+    <Compile Include="Assets\Scripts\Game\Weapons\LaserTracer.cs" />
+    <Compile Include="Assets\FacebookSDK\Examples\Scripts\SubMenus\Pay.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Modes\RTSCameraMode.cs" />
+    <Compile Include="Assets\KriptoFX\Realistic Effects Pack v4\Scripts\RFX4_PhysXSetImpulse.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IUnityOfferwall.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\SpritesForGetInButton.cs" />
+    <Compile Include="Assets\Scripts\Game\Enemy\RagdollStatus.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\Models\DepthOfFieldModel.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Qwest\QwestMaker.cs" />
+    <Compile Include="Assets\Scripts\Game\Traffic\VehicleDriversWeight.cs" />
+    <Compile Include="Assets\Scripts\Skill\DamageBall.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\GabrielAguiarProductions\Unique_Projectiles_Volume_1\Scripts\Serializables.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\KriptoFX\Realistic Effects Pack v1\Scripts\RFX1_ParticleCollisionGameObject.cs" />
+    <Compile Include="Assets\Scripts\Game\Enemy\DriverStatus.cs" />
+    <Compile Include="Assets\Scripts\AmmoManager.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Extras\HealthBar.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\Internal\fsTypeCache.cs" />
+    <Compile Include="Assets\Scripts\CloakResetter.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Input\Mobile\MobileControls.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\Components\AmbientOcclusionComponent.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\KriptoFX\Realistic Effects Pack v1\Scripts\RFX1_ParticleGravityPoint.cs" />
+    <Compile Include="Assets\Scripts\Code\Game\Race\QuestToRaceAdapter.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\HelpfulAds\SecondBreathAds.cs" />
+    <Compile Include="Assets\01_ROPE\Scripts\Config.cs" />
+    <Compile Include="Assets\Scripts\Game\Enemy\BaseStatusNPC.cs" />
+    <Compile Include="Assets\Scripts\Game\Enemy\BodyPartDamageReciever.cs" />
+    <Compile Include="Assets\Scripts\Game\Traffic\PrefabDistribution.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\fsIgnoreAttribute.cs" />
+    <Compile Include="Assets\Scripts\Game\Vehicle\CarSpecific.cs" />
+    <Compile Include="Assets\Scripts\RestoreInAppButton.cs" />
+    <Compile Include="Assets\Scripts\Skill\SkillFour.cs" />
+    <Compile Include="Assets\Scripts\DPSMeter.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\fsConverterRegistrar.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\ForceMultipliers.cs" />
+    <Compile Include="Assets\Scripts\AutomaticScaleButton.cs" />
+    <Compile Include="Assets\Scripts\Game\Items\PowerUpTimeStatusItem.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Qwest\QwestPoint.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IronSourceRewardedVideoLevelPlayAndroid.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\Models\AntialiasingModel.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2020\MagicalUltimate\Sources\Scripts\FX_Tentacle.cs" />
+    <Compile Include="Assets\StompyRobot\SROptions\SROptions.Attributes.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CharacterController\FactionsManager.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\NeatWolf\Bundle01-Fire&amp;Fog\Scripts\Rotating.cs" />
+    <Compile Include="Assets\Made_Fx\2D_2019\KriptoFX\Realistic Effects Pack v4\ImagePostEffects\Mobile\RFX4_MobileBloom.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\Internal\fsVersionManager.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IronSourceConfig.cs" />
+    <Compile Include="Assets\Scripts\Skill\AnimationEventListener.cs" />
+    <Compile Include="Assets\Scripts\Code\Game\Race\RaceItemView.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\Internal\fsReflectedConverter.cs" />
+    <Compile Include="Assets\Scripts\Game\Items\ShopVariables.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\KriptoFX\Realistic Effects Pack v1\PostEffects\PC\Common\ImageEffectHelper.cs" />
+    <Compile Include="Assets\Made_Fx\2D_2019\KriptoFX\Realistic Effects Pack v4\Effects\Scripts\RFX4_PhysicsMotion.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CollisionSystem\SimpleCollision.cs" />
+    <Compile Include="Assets\Scripts\Code\Game\Race\ResultTableInfoPanel.cs" />
+    <Compile Include="Assets\Scripts\SelectiveStringTagsContainer.cs" />
+    <Compile Include="Assets\Scripts\Game\MiniMap\MetroMarkForMiniMap.cs" />
+    <Compile Include="Assets\Scripts\FullSerializer\fsDirectConverter.cs" />
+    <Compile Include="Assets\Stickman_Rope\Military Aircraft Pack\Demo Scene\Scripts\Hover.cs" />
+    <Compile Include="Assets\Scripts\Game\GlobalComponent\Qwest\QwestArrowToggle.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CharacterController\ObstacleHelper.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\KriptoFX\Realistic Effects Pack v1\Scripts\Curves\RFX1_AudioVolumeCurves.cs" />
+    <Compile Include="Assets\FacebookSDK\Examples\Scripts\SubMenus\AppEvents.cs" />
+    <Compile Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\PostProcessing\Runtime\Models\DitheringModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Shaders\Mobile-Particle-Add-OPTIMIZED.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+    <None Include="Assets\KriptoFX\Realistic Effects Pack v4\Shaders\RFX4_Particle.shader" />
+    <None Include="Assets\Resources\dialogs\Nigger1.txt" />
+    <None Include="Assets\Resources\dialogs\Bank11.txt" />
+    <None Include="Assets\Shaders\Particle Premultiply Blend.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\KriptoFX\MuzzleFlashes\Shaders\FPSLazer.shader" />
+    <None Include="Assets\Resources\dialogs\Spy5.txt" />
+    <None Include="Assets\KriptoFX\Realistic Effects Pack v4\Shaders\Decal\RFX4_DecalDistortMaskMulMobile.shader" />
+    <None Include="Assets\KriptoFX\Realistic Effects Pack v4\Shaders\RFX4_LightningMobile.shader" />
+    <None Include="Assets\Texts\PedestrianTraffic_04.txt" />
+    <None Include="Assets\BuildReport\CustomBuildScriptExample.txt" />
+    <None Include="Assets\Resources\config\OrbitConfig.txt" />
+    <None Include="Assets\KriptoFX\Realistic Effects Pack v4\Shaders\Portal\RFX4_PortalSky.shader" />
+    <None Include="Assets\Resources\dialogs\Spy4.txt" />
+    <None Include="Assets\Shaders\ShineEffect.shader" />
+    <None Include="Assets\KriptoFX\MuzzleFlashes\Shaders\Particles.shader" />
+    <None Include="Assets\Shaders\WaterViceTown_v27_09.shader" />
+    <None Include="Assets\Shaders\DiffuseShake_CullOff.shader" />
+    <None Include="Assets\FacebookSDK\link.xml" />
+    <None Include="Assets\FacebookSDK\Plugins\iOS\Facebook.Unity.IOS.dll" />
+    <None Include="Assets\Shaders\RopeShader.shader" />
+    <None Include="Assets\GoogleMobileAds\GoogleMobileAds.Common.dll" />
+    <None Include="Assets\Shaders\Shader_d1.shader" />
+    <None Include="Assets\Shaders\ExplosionCar_v2_Smoke.shader" />
+    <None Include="Assets\KriptoFX\Realistic Effects Pack v4\Shaders\Decal\RFX4_DecalMask.shader" />
+    <None Include="Assets\Resources\config\ThirdPersonConfig.txt" />
+    <None Include="Assets\KriptoFX\Realistic Effects Pack v4\Shaders\RFX4_DistortionParticlesAdd.shader" />
+    <None Include="Assets\KriptoFX\Realistic Effects Pack v4\Shaders\RFX4_Ice.shader" />
+    <None Include="Assets\Texts\VehicleTraffic.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\Texts\PedestrianTraffic.txt" />
+    <None Include="Assets\Resources\dialogs\Booze2.txt" />
+    <None Include="Assets\KriptoFX\Realistic Effects Pack v4\Shaders\Decal\RFX4_IceDecal.shader" />
+    <None Include="Assets\GoogleMobileAds\GoogleMobileAds.dll" />
+    <None Include="Assets\KriptoFX\Realistic Effects Pack v4\Shaders\Decal\RFX4_DecalDistortMaskMul.shader" />
+    <None Include="Assets\Texts\VehicleTraffic_01.txt" />
+    <None Include="Assets\Shaders\UIMask.shader" />
+    <None Include="Assets\GoogleMobileAdsNative\GoogleMobileAdsNative.iOS.dll" />
+    <None Include="Assets\GoogleMobileAds\GoogleMobileAds.iOS.dll" />
+    <None Include="Assets\KriptoFX\MuzzleFlashes\Shaders\Rocks.shader" />
+    <None Include="Assets\KriptoFX\Realistic Effects Pack v4\Shaders\Portal\RFX4_PortalMask.shader" />
+    <None Include="Assets\Resources\config\mobilelayouts\ThirdPersonLayout.txt" />
+    <None Include="Assets\GoogleMobileAds\GoogleMobileAds_version-7.2.0_manifest.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\KriptoFX\Realistic Effects Pack v4\Shaders\RFX4_Tornado.shader" />
+    <None Include="Assets\Resources\config\RPGConfig.txt" />
+    <None Include="Assets\KriptoFX\Realistic Effects Pack v4\Shaders\Water\RFX4_WaterSplashMobile.shader" />
+    <None Include="Assets\Resources\config\ThirdPersonConfig(Transformer).txt" />
+    <None Include="Assets\Resources\config\RagdollConfig.txt" />
+    <None Include="Assets\Resources\screenerconfigs\resources\AccessoryConfig.txt" />
+    <None Include="Assets\BuildReport\README.txt" />
+    <None Include="Assets\FacebookSDK\Plugins\Settings\Facebook.Unity.Settings.dll" />
+    <None Include="Assets\KriptoFX\Realistic Effects Pack v4\Shaders\RFX4_Lightning.shader" />
+    <None Include="Assets\StreamingAssets\build_info.txt" />
+    <None Include="Assets\Made_Fx\3D_2019\KriptoFX\Realistic Effects Pack v1\PostEffects\PC\Bloom\Resources\Bloom.shader" />
+    <None Include="Assets\Resources\dialogs\Bank2.txt" />
+    <None Include="Assets\Resources\dialogs\bank3.txt" />
+    <None Include="Assets\Resources\ConfigThirdPersonConfig.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\Resources\dialogs\Bank21.txt" />
+    <None Include="Assets\KriptoFX\Realistic Effects Pack v4\Shaders\RFX4_CutoutBorderMobile.shader" />
+    <None Include="Assets\Resources\config\ThirdPersonConfigBIG.txt" />
+    <None Include="Assets\FacebookSDK\Plugins\Canvas\Facebook.Unity.Canvas.dll" />
+    <None Include="Assets\KriptoFX\Realistic Effects Pack v4\Shaders\RFX4_Lava.shader" />
+    <None Include="Assets\Resources\config\ThirdPersonConfig_slow.txt" />
+    <None Include="Assets\Shaders\Character_SHADER_eng_v_2.shader" />
+    <None Include="Assets\GoogleMobileAds\GoogleMobileAds.Core.dll" />
+    <None Include="Assets\KriptoFX\Realistic Effects Pack v4\Shaders\Water\RFX4_WaterSplashTexMobile.shader" />
+    <None Include="Assets\Made_Fx\Kamehameha\Shaders\Blend_TwoSides.shader" />
+    <None Include="Assets\Shaders\Shader_d2.shader" />
+    <None Include="Assets\Realistic Effects Pack\Shaders\GlowAdditiveSimple.shader" />
+    <None Include="Assets\GoogleMobileAdsNative\link.xml" />
+    <None Include="Assets\KriptoFX\Realistic Effects Pack v4\Shaders\Decal\RFX4_IceDecalMobile.shader" />
+    <None Include="Assets\Resources\config\FPSConfig.txt" />
+    <None Include="Assets\Made_Fx\3D_2019\ErbGameArt\3D Lasers Pack\Shaders\Blend_CenterGlow.shader" />
+    <None Include="Assets\Texts\PedestrianTraffic_02.txt" />
+    <None Include="Assets\GoogleMobileAds\link.xml" />
+    <None Include="Assets\KriptoFX\Realistic Effects Pack v4\Shaders\RFX4_ShaderExtension.cginc" />
+    <None Include="Assets\KriptoFX\Realistic Effects Pack v4\Shaders\Decal\RFX4_ProjectorBlended.shader" />
+    <None Include="Assets\Shaders\ExplosionCar_v2.shader" />
+    <None Include="Assets\KriptoFX\Realistic Effects Pack v4\Shaders\Decal\RFX4_DecalDistortMaskMobile.shader" />
+    <None Include="Assets\KriptoFX\MuzzleFlashes\Shaders\FPS_UberDecal.shader" />
+    <None Include="Assets\Resources\config\CarConfig.txt" />
+    <None Include="Assets\KriptoFX\MuzzleFlashes\ImagePostEffects\Mobile\Resources\FPS_Bloom_Inc.cginc" />
+    <None Include="Assets\Shaders\ShaderMapIcon.shader" />
+    <None Include="Assets\KriptoFX\Realistic Effects Pack v4\Shaders\RFX4_IceMobile.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\Realistic Effects Pack\Shaders\Mobile\Distortion\DistortionParticlesCutout.shader" />
+    <None Include="Assets\FacebookSDK\Plugins\Facebook.Unity.dll" />
+    <None Include="Assets\KriptoFX\Realistic Effects Pack v4\Shaders\Portal\RFX4_TranperentDiffuse.shader" />
+    <None Include="Assets\Resources\VehicleConfig.txt" />
+    <None Include="Assets\Resources\config\mobilelayouts\RPGLayout.txt" />
+    <None Include="Assets\Resources\config\mobilelayouts\EmptyLayout.txt" />
+    <None Include="Assets\GoogleMobileAdsNative\GoogleMobileAdsNative.Android.dll" />
+    <None Include="Assets\Made_Fx\3D_2019\KriptoFX\Realistic Effects Pack v1\PostEffects\PC\Bloom\Resources\Bloom.cginc" />
+    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\Resources\screenerconfigs\resources\ClothesConfig.txt" />
+    <None Include="Assets\Resources\dialogs\Booze11.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\Resources\dialogs\Spy1.txt" />
+    <None Include="Assets\Resources\ConfigThirdPersonConfig(Transformer).txt" />
+    <None Include="Assets\KriptoFX\MuzzleFlashes\Shaders\AlphaBlendedAnim.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\BuildReport\license.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+    <None Include="Assets\Shaders\Particle Add.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\KriptoFX\Realistic Effects Pack v4\Shaders\Decal\RFX4_ProjectorBlendedMobile.shader" />
+    <None Include="Assets\Shaders\UIMasked.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\Realistic Effects Pack\Shaders\GlowAdditive.shader" />
+    <None Include="Assets\BuildReport\VERSION.txt" />
+    <None Include="Assets\Resources\config\mobilelayouts\FPSLayout.txt" />
+    <None Include="Assets\FacebookSDK\Plugins\Gameroom\Facebook.Unity.Gameroom.dll" />
+    <None Include="Assets\KriptoFX\Realistic Effects Pack v4\Shaders\Water\RFX4_WaterSplash.shader" />
+    <None Include="Assets\KriptoFX\MuzzleFlashes\Shaders\FPSGlowAdditive.shader" />
+    <None Include="Assets\KriptoFX\Realistic Effects Pack v4\Shaders\Portal\RFX4_PortalStandard.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\Resources\config\LookAtConfig.txt" />
+    <None Include="Assets\Resources\config\RTSConfig.txt" />
+    <None Include="Assets\Texts\PedestrianTraffic_03.txt" />
+    <None Include="Assets\Resources\config\EmptyConfig.txt" />
+    <None Include="Assets\KriptoFX\MuzzleFlashes\Shaders\FPSDistortionGlass.shader" />
+    <None Include="Assets\Resources\config\DeadConfig.txt" />
+    <None Include="Assets\Resources\config\DebugConfig.txt" />
+    <None Include="Assets\KriptoFX\Realistic Effects Pack v4\Shaders\RFX4_DistortionParticlesMobile.shader" />
+    <None Include="Assets\KriptoFX\MuzzleFlashes\Readme.txt" />
+    <None Include="Assets\MaxSdk\Mediation\MediationAdapters.txt" />
+    <None Include="Assets\KriptoFX\Realistic Effects Pack v4\Shaders\Bloom\Resources\RFX4_BloomAdditive.shader" />
+    <None Include="Assets\GoogleMobileAdsNative\GoogleMobileAdsNative.Common.dll" />
+    <None Include="Assets\Resources\config\FlyConfig.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\GoogleMobileAdsNative\GoogleMobileAdsNative.dll" />
+    <None Include="Assets\Shaders\Skybox-Procedural.shader" />
+    <None Include="Assets\StompyRobot\SROptions\link.xml" />
+    <None Include="Assets\GoogleMobileAds\GoogleMobileAds.Unity.dll" />
+    <None Include="Assets\Shaders\Particle AddSmooth.shader" />
+    <None Include="Assets\KriptoFX\Realistic Effects Pack v4\Shaders\Water\RFX4_WaterSplashTex.shader" />
+    <None Include="Assets\Resources\ConfigConfigThirdPersonConfigBIG.txt" />
+    <None Include="Assets\KriptoFX\MuzzleFlashes\Shaders\FPSDistortionParticles.shader" />
+    <None Include="Assets\KriptoFX\Realistic Effects Pack v4\Shaders\Bloom\Resources\RFX4_Bloom.shader" />
+    <None Include="Assets\KriptoFX\Realistic Effects Pack v4\Shaders\Portal\NoStencilTransperentDiffuse.shader" />
+    <None Include="Assets\Resources\config\mobilelayouts\RTSLayout.txt" />
+    <None Include="Assets\Resources\config\mobilelayouts\RPG_StickLayout.txt" />
+    <None Include="Assets\FacebookSDK\Plugins\Android\Facebook.Unity.Android.dll" />
+    <None Include="Assets\KriptoFX\MuzzleFlashes\Shaders\FPSDistortionWaterParticles.shader" />
+    <None Include="Assets\Resources\dialogs\Bank4.txt" />
+    <None Include="Assets\Resources\dialogs\Nigger2.txt" />
+    <None Include="Assets\KriptoFX\Realistic Effects Pack v4\Readme.txt" />
+    <None Include="Assets\Texts\QwestData.txt" />
+    <None Include="Assets\Realistic Effects Pack\Shaders\GlowAdditiveTwoColor.shader" />
+    <None Include="Assets\Made_Fx\3D_2020\StylizedExplosionPack\shader\alphaBlend_glow.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\IronSource\Plugins\Android\IronSource.plugin\AndroidManifest.xml" />
+    <None Include="Assets\Resources\config\CollisionConfig.txt" />
+    <None Include="Assets\KriptoFX\Realistic Effects Pack v4\Shaders\Decal\RFX4_DecalDistortMask.shader" />
+    <None Include="Assets\Resources\config\mobilelayouts\OrbitLayout.txt" />
+    <None Include="Assets\Resources\WeaponConfig.txt" />
+    <None Include="Assets\GoogleMobileAds\GoogleMobileAds.Android.dll" />
+    <None Include="Assets\Made_Fx\3D_2019\ErbGameArt\3D Lasers Pack\Shaders\Add_CenterGlow.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\Shaders\DiffuseShake.shader" />
+    <None Include="Assets\KriptoFX\Realistic Effects Pack v4\Shaders\Decal\RFX4_DecalMaskMobile.shader" />
+    <None Include="Assets\Shaders\Mobile-Unlit-Scroll2Layers-Sine-AlphaBlend.shader" />
+    <None Include="Assets\KriptoFX\Realistic Effects Pack v4\Shaders\Water\RFX4_WaterTurbulence.shader" />
+    <None Include="Assets\Resources\dialogs\Bank1.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\KriptoFX\MuzzleFlashes\ImagePostEffects\Mobile\Resources\FPS_Bloom.shader" />
+    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\Realistic Effects Pack\Shaders\ParticleAdd.shader" />
+    <None Include="Assets\Resources\dialogs\Booze23.txt" />
+    <None Include="Assets\KriptoFX\Realistic Effects Pack v4\Shaders\RFX4_MobileDiffuse.shader" />
+    <None Include="Assets\Resources\dialogs\Nigger12.txt" />
+    <None Include="Assets\Shaders\DoubleSidedShader.shader" />
+    <None Include="Assets\Texts\PedestrianTraffic_01.txt" />
+    <None Include="Assets\Made_Fx\3D_2019\FantasySpellsEffectsPack\Shader_ForEffects\Integrated Particle\Shader_Integrated Paticle(ValueControl).shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\KriptoFX\Realistic Effects Pack v4\Shaders\RFX4_DistortionParticles.shader" />
+    <None Include="Assets\KriptoFX\Realistic Effects Pack v4\Shaders\Bloom\Resources\RFX4_Bloom_Inc.cginc" />
+    <None Include="Assets\Resources\screenerconfigs\resources\PatronContainerConfig.txt" />
+    <None Include="Assets\KriptoFX\Realistic Effects Pack v4\Shaders\RFX4_CutoutBorder.shader" />
+    <None Include="Assets\Texts\PedestrianTraffic - Copy.txt" />
+    <None Include="Assets\KriptoFX\Realistic Effects Pack v4\Shaders\RFX4_DepthMask.shader" />
+    <None Include="Assets\Resources\dialogs\Nigger21.txt" />
+    <None Include="Assets\Resources\ConfigConfigThirdPersonConfig.txt" />
+    <None Include="Assets\Resources\dialogs\Booze1.txt" />
+    <None Include="Assets\KriptoFX\MuzzleFlashes\Shaders\Leafs.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\FacebookSDK\Plugins\Gameroom\FacebookNamedPipeClient.dll" />
+    <None Include="Assets\Resources\BillingMode.txt" />
+    <None Include="Assets\Shaders\RimLight.shader" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.AndroidJNIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DSPGraphModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.DSPGraphModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GIModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.GIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.SubsystemsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.TextCoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsNativeModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.UIElementsNativeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityCurlModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.UnityCurlModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Recorder.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Recorder.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="StompyRobot.SRF.Editor">
+      <HintPath>Library\ScriptAssemblies\StompyRobot.SRF.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualStudio.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.SecurityStub">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Purchasing.SecurityStub.dll</HintPath>
+    </Reference>
+    <Reference Include="StompyRobot.SRDebugger.Editor">
+      <HintPath>Library\ScriptAssemblies\StompyRobot.SRDebugger.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="AppsFlyer.Editor">
+      <HintPath>Library\ScriptAssemblies\AppsFlyer.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PlasticSCM.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="MaxSdk.Scripts.Editor">
+      <HintPath>Library\ScriptAssemblies\MaxSdk.Scripts.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Purchasing">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="MaxSdk.Scripts.IntegrationManager.Editor">
+      <HintPath>Library\ScriptAssemblies\MaxSdk.Scripts.IntegrationManager.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMobileAds.Editor">
+      <HintPath>Library\ScriptAssemblies\GoogleMobileAds.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMobileAdsNative.Common">
+      <HintPath>Assets\GoogleMobileAdsNative\GoogleMobileAdsNative.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook.Unity.Gameroom">
+      <HintPath>Assets\FacebookSDK\Plugins\Gameroom\Facebook.Unity.Gameroom.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMobileAdsNative.Android">
+      <HintPath>Assets\GoogleMobileAdsNative\GoogleMobileAdsNative.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>Assets\AppsFlyer\Tests\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.App">
+      <HintPath>Library\PackageCache\com.google.firebase.app@18c3e06f7f0f\Firebase\Plugins\Firebase.App.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMobileAdsNative">
+      <HintPath>Assets\GoogleMobileAdsNative\GoogleMobileAdsNative.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.TaskExtension">
+      <HintPath>Library\PackageCache\com.google.firebase.app@18c3e06f7f0f\Firebase\Plugins\Firebase.TaskExtension.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMobileAds.Android">
+      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMobileAds.Common">
+      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\AOT\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMobileAds">
+      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions">
+      <HintPath>Assets\AppsFlyer\Tests\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook.Unity.Android">
+      <HintPath>Assets\FacebookSDK\Plugins\Android\Facebook.Unity.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="NSubstitute">
+      <HintPath>Assets\AppsFlyer\Tests\NSubstitute.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTweenPro">
+      <HintPath>Assets\Plugins\Demigiant\DOTweenPro\DOTweenPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>Assets\AppsFlyer\Tests\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="FacebookNamedPipeClient">
+      <HintPath>Assets\FacebookSDK\Plugins\Gameroom\FacebookNamedPipeClient.dll</HintPath>
+    </Reference>
+    <Reference Include="DemiLib">
+      <HintPath>Assets\Plugins\Demigiant\DemiLib\Core\DemiLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.RemoteConfig">
+      <HintPath>Library\PackageCache\com.google.firebase.remote-config@857f0ad3a432\Firebase\Plugins\Firebase.RemoteConfig.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.Analytics">
+      <HintPath>Library\PackageCache\com.google.firebase.analytics@3dbb301ca953\Firebase\Plugins\Firebase.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook.Unity.Settings">
+      <HintPath>Assets\FacebookSDK\Plugins\Settings\Facebook.Unity.Settings.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMobileAds.Core">
+      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Tasks">
+      <HintPath>Library\PackageCache\com.google.firebase.app@18c3e06f7f0f\Parse\Plugins\dotNet45\Unity.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.MiniJson">
+      <HintPath>Library\PackageCache\com.google.firebase.app@18c3e06f7f0f\Firebase\Plugins\Google.MiniJson.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.Platform">
+      <HintPath>Library\PackageCache\com.google.firebase.app@18c3e06f7f0f\Firebase\Plugins\Firebase.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Compat">
+      <HintPath>Library\PackageCache\com.google.firebase.app@18c3e06f7f0f\Parse\Plugins\dotNet45\Unity.Compat.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook.Unity">
+      <HintPath>Assets\FacebookSDK\Plugins\Facebook.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.IO.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Microsoft.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\Microsoft.Win32.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="System.AppContext">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.AppContext.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Concurrent">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Collections.Concurrent.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.NonGeneric">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Collections.NonGeneric.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Specialized">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Collections.Specialized.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.EventBasedAsync">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.EventBasedAsync.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Primitives">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.TypeConverter">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.TypeConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Common">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Contracts">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Debug">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.Debug.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.FileVersionInfo">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.FileVersionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Process">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.Process.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.StackTrace.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TextWriterTraceListener">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tools">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TraceSource">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.TraceSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Primitives">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Drawing.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Dynamic.Runtime">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Dynamic.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Globalization.Calendars.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Globalization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Extensions">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Globalization.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.ZipFile">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.Compression.ZipFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.DriveInfo">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.FileSystem.DriveInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Watcher">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.FileSystem.Watcher.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.IsolatedStorage">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.IsolatedStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.MemoryMappedFiles">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.MemoryMappedFiles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipes">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.Pipes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.UnmanagedMemoryStream">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.UnmanagedMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Expressions">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Linq.Expressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Parallel">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Linq.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Queryable">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Linq.Queryable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Rtc">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Http.Rtc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NameResolution">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.NameResolution.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NetworkInformation">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.NetworkInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Ping">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Ping.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Primitives">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Requests">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Requests.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Security">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebHeaderCollection">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.WebHeaderCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets.Client">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.WebSockets.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.WebSockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ObjectModel">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Emit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.ILGeneration">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Emit.ILGeneration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.Lightweight">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Emit.Lightweight.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Extensions">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Primitives">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Reader">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Resources.Reader.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.ResourceManager">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Resources.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Writer">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Resources.Writer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.VisualC">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.CompilerServices.VisualC.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Handles">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Handles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.InteropServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Numerics">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Serialization.Formatters.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Json">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Serialization.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Primitives">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Serialization.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Xml">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Serialization.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Claims">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Claims.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Csp">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.Csp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Principal.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.SecureString">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.SecureString.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Duplex">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.Duplex.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Http">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.NetTcp">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.NetTcp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Primitives">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Security">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Text.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.Extensions">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Text.Encoding.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Text.RegularExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Overlapped">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Overlapped.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Parallel">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Tasks.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Thread">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Thread.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.ThreadPool">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.ThreadPool.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Timer">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Timer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.ReaderWriter">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.ReaderWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XDocument">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlDocument">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XmlDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlSerializer">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XmlSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XDocument">
+      <HintPath>D:\Unity2020.3.15f2\2020.3.37f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.Player.csproj">
+      <Project>{8E384466-92DE-F183-2EA4-827C045737DA}</Project>
+      <Name>Assembly-CSharp-firstpass.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="Purchasing.Common.Player.csproj">
+      <Project>{5F7BC60D-6DD6-4CB5-BCCE-08864492E5E2}</Project>
+      <Name>Purchasing.Common.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Recorder.Base.Player.csproj">
+      <Project>{E6A4BCC4-34F7-A8CA-3F4F-B04EC7D162E4}</Project>
+      <Name>Unity.Recorder.Base.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.Purchasing.Player.csproj">
+      <Project>{ABB6F1A1-0AB4-5C77-7DD9-DC84D96F3A82}</Project>
+      <Name>UnityEngine.Purchasing.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="StompyRobot.SRDebugger.Player.csproj">
+      <Project>{EFDD1DCF-F4AF-8B42-621A-6CDFE86C4740}</Project>
+      <Name>StompyRobot.SRDebugger.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Timeline.Player.csproj">
+      <Project>{E16C63D8-78B0-290C-1A84-C8AB03422519}</Project>
+      <Name>Unity.Timeline.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.TextMeshPro.Player.csproj">
+      <Project>{DB4AC1EC-83CD-C684-9B38-C3CF8BBAE62F}</Project>
+      <Name>Unity.TextMeshPro.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="AppsFlyer.Player.csproj">
+      <Project>{7F6D29C6-70FE-053E-D404-323B464F7F23}</Project>
+      <Name>AppsFlyer.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.DOTween.Player.csproj">
+      <Project>{1FF1A966-A6CE-00C8-1CF4-FD6C59FF2EB4}</Project>
+      <Name>UniTask.DOTween.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.Player.csproj">
+      <Project>{176D17EC-A95F-BE15-76A0-E8755B067188}</Project>
+      <Name>UnityEngine.UI.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.Purchasing.Security.Player.csproj">
+      <Project>{E9A5CC97-2B17-658D-4BE8-0DF087D0CEAA}</Project>
+      <Name>UnityEngine.Purchasing.Security.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.Linq.Player.csproj">
+      <Project>{DBC37555-E17A-761D-E015-C17897111F3D}</Project>
+      <Name>UniTask.Linq.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Services.Core.Player.csproj">
+      <Project>{33A3A734-CAB9-27CD-88EE-E0A7FDA81225}</Project>
+      <Name>Unity.Services.Core.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.TextMeshPro.Player.csproj">
+      <Project>{0CDD947C-0C3D-3A66-5C9C-755EC9921339}</Project>
+      <Name>UniTask.TextMeshPro.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Services.Core.Analytics.Player.csproj">
+      <Project>{E8B59FF4-57ED-899F-9E40-BA862214583E}</Project>
+      <Name>Unity.Services.Core.Analytics.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.Purchasing.SecurityCore.Player.csproj">
+      <Project>{1C8FDA05-6F59-A98C-AE6B-5B53A9A75CF6}</Project>
+      <Name>UnityEngine.Purchasing.SecurityCore.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.Purchasing.Codeless.Player.csproj">
+      <Project>{7971D425-632E-FF5F-A6BF-C6C08837E6F9}</Project>
+      <Name>UnityEngine.Purchasing.Codeless.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Services.Core.Environments.Player.csproj">
+      <Project>{443E248B-C40C-81F8-0534-B8359C80E751}</Project>
+      <Name>Unity.Services.Core.Environments.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.Purchasing.Stores.Player.csproj">
+      <Project>{7BED7524-1D6D-3535-A309-F8FC453D048F}</Project>
+      <Name>UnityEngine.Purchasing.Stores.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="MaxSdk.Scripts.Player.csproj">
+      <Project>{964666AB-79FA-F59B-E86D-B0942393A9BF}</Project>
+      <Name>MaxSdk.Scripts.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.Player.csproj">
+      <Project>{A8D38AA5-0026-5991-B97E-D6F8DF7369EE}</Project>
+      <Name>UniTask.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="StompyRobot.SRF.Player.csproj">
+      <Project>{E8EB63B1-D3CC-B604-1106-FA1C09060DBC}</Project>
+      <Name>StompyRobot.SRF.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.Addressables.Player.csproj">
+      <Project>{9D1BDBC5-2A20-F09D-2005-11318EFC1330}</Project>
+      <Name>UniTask.Addressables.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Recorder.Player.csproj">
+      <Project>{F770039B-E92A-F30C-E5EC-D1492FEEE194}</Project>
+      <Name>Unity.Recorder.Player</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -4,11 +4,14 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 namespace Game.GlobalComponent.Qwest
 {
 	public class QwestCompletePanel : MonoBehaviour
 	{
+	
+		
 		private static QwestCompletePanel instance;
 
 		public float DeactivateDelay;
@@ -47,7 +50,16 @@ namespace Game.GlobalComponent.Qwest
 			{
 				return;
 			}
+			
+
+			StartCoroutine(DelayComplete(headerMessage, reward));
+		}
+	   public IEnumerator DelayComplete(string headerMessage, UniversalReward reward)
+		{
+			yield return new WaitForSeconds(0.5f);
 			MissionCompletePanel.gameObject.SetActive(value: true);
+
+
 			BackButton.ChangeBackButtonsStatus(active: false);
 			HeaderText.text = headerMessage;
 			int childCount = ContentContainer.childCount;
@@ -113,7 +125,15 @@ namespace Game.GlobalComponent.Qwest
 				timeWasFreezed = true;
 			}
 			rewardShow = true;
+
+		    
+
+
 		}
+
+	
+
+
 
 		public void HideQwestInfo()
 		{

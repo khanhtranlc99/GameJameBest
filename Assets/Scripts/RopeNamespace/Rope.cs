@@ -5,6 +5,8 @@ namespace RopeNamespace
 {
 	public class Rope : MonoBehaviour
 	{
+	 
+
 		public Transform HookPlaceholder;
 
 		private State state;
@@ -34,6 +36,7 @@ namespace RopeNamespace
 		private RopePointsMaker maker;
 
 		private float t;
+		private Vector3 firstPostTail;
 
 		private Vector3 target
 		{
@@ -56,6 +59,7 @@ namespace RopeNamespace
 			maker = new RopePointsMaker((float)Math.PI / 5f, 0.1f, 20f, 0.1f);
 			mat = lr.sharedMaterial;
 			lr.enabled = false;
+		//	firstPostTail = tail.transform.position;
 		}
 
 		private void SetRopeExpandProgress(float n)
@@ -81,9 +85,11 @@ namespace RopeNamespace
 				lr.SetPositions(array);
 				state = State.increasing;
 				lr.enabled = true;
+		
+			 
 			}
 		}
-
+		Vector3 lastPoint;
 		public void ShootMovingTarget(Transform target, Vector3 offset, float incTime, float strTime, bool useDelay = false)
 		{
 			base.transform.position = HookPlaceholder.position;
@@ -99,7 +105,12 @@ namespace RopeNamespace
 			lr.SetPositions(array);
 			state = State.increasing;
 			lr.enabled = true;
+		//	firstPostTail = tail.transform.position;
+		//	tail.transform.position = lr.GetPosition(lr.positionCount - 1);
+
 		}
+
+
 
 		public void ShootFail(Vector3 direction, float maxDistance, float incTime, float strTime, bool useDelay = false)
 		{
@@ -116,12 +127,16 @@ namespace RopeNamespace
 			lr.SetPositions(array);
 			state = State.increasing;
 			lr.enabled = true;
+		//	firstPostTail = tail.transform.position;
+		//	tail.transform.position = lr.GetPosition(lr.positionCount - 1);
 		}
 
 		public void Disable()
 		{
 			state = State.disabled;
 			lr.enabled = false;
+		//	tail.transform.position = firstPostTail;
+		 
 		}
 
 		public void Decrease()

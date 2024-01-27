@@ -8,6 +8,18 @@ namespace Code.Game.Race.UI
 {
 	public class UiRaceManager : MonoBehaviour
 	{
+		public GameObject objectStrongBegginnig;
+	    public int FirstOpenRace
+		{
+			get
+			{
+				return PlayerPrefs.GetInt("FirstOpenRace",0);
+			}
+			set
+			{
+				PlayerPrefs.SetInt("FirstOpenRace", value);
+			}
+		}
 		private static UiRaceManager instance;
 
 		private RaceState raceState;
@@ -68,7 +80,8 @@ namespace Code.Game.Race.UI
 				ActivateRaceUiElements(value: false);
 				resultTableInfoPanelView.gameObject.SetActive(value: false);
 				resultTableInfoPanelView.ClearResultTable();
-				break;
+					Debug.LogError("BeforeStart");
+					break;
 			case RaceState.Start:
 				StartCoroutine(CountDown());
 				break;
@@ -80,7 +93,14 @@ namespace Code.Game.Race.UI
 				ActivateRaceUiElements(value: false);
 				resultTableInfoPanelView.gameObject.SetActive(value: true);
 				Finish();
-				break;
+					if(FirstOpenRace == 0)
+					{
+						ObjectStrongBegining.Instance.ObBegining.SetActive(true);
+						FirstOpenRace = 1;
+					}
+
+
+					break;
 			default:
 				throw new ArgumentOutOfRangeException("raceState", raceState, "Unsupported type of RaceState");
 			}

@@ -1,16 +1,19 @@
 using Common.Analytics;
 using Game.GlobalComponent.Quality;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
-
+using DG.Tweening;
 namespace Game.GlobalComponent
 {
 	public class PerformanceDetecting : MonoBehaviour
 	{
-		[Serializable]
+		public List<Sprite> lsData;
+		public Image imageScene;
+		[Serializable] 
 		public class TestGroup
 		{
 			public string Name;
@@ -57,7 +60,7 @@ namespace Game.GlobalComponent
 		private bool testEnd;
 
 		private bool startTesting;
-
+		Coroutine temp;
 		public void PlayBonusGame()
 		{
 			ResultPanel.SetActive(value: false);
@@ -68,6 +71,13 @@ namespace Game.GlobalComponent
 		private void Start()
 		{
 			Init();
+
+			if (temp != null)
+			{
+				StopCoroutine(temp);
+				temp = null;
+			}
+			temp = StartCoroutine(ChangeSprite());
 		}
 
 		private bool MinimumRequirements()
@@ -103,7 +113,35 @@ namespace Game.GlobalComponent
 			ProgressBar.maxValue = detectingTime;
 		}
 
-		private void FixedUpdate()
+		int ran;
+		private IEnumerator ChangeSprite()
+		{
+
+			Debug.LogError("ChangeSprite");
+			yield return new WaitForSeconds(1.5f);
+			imageScene.DOColor(new Color32(0, 0, 0, 0), 1).OnComplete(delegate {
+
+				ran = UnityEngine.Random.Range(0, lsData.Count);
+				imageScene.sprite = lsData[ran];
+				imageScene.DOColor(new Color32(255, 255, 255, 255), 1).OnComplete(delegate {
+
+					if (temp != null)
+					{
+						StopCoroutine(temp);
+						temp = null;
+					}
+					temp = StartCoroutine(ChangeSprite());
+
+
+				});
+			});
+
+
+		}
+       
+
+
+        private void FixedUpdate()
 		{
 			if (startTesting)
 			{

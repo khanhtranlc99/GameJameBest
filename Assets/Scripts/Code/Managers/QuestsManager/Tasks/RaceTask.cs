@@ -22,6 +22,7 @@ namespace Code.Managers.QuestsManager.Tasks
 			RaceManager.OnRaceStateChanged += CheckForComplete;
 			ResultTableInfoPanel.OnRacerFinished += CheckForLose;
 			QuestToRaceAdapter.Instance.InitQuest(RaceNumber, CurrentQwest);
+			PlayerPrefs.SetInt("IsDoMission", 1);
 		}
 
 		private void CheckForLose(int opponentPlace, int playerPlace)

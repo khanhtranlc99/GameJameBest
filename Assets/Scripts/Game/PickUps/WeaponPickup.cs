@@ -2,6 +2,7 @@ using Game.Character;
 using Game.GlobalComponent;
 using Game.Items;
 using Game.Shop;
+using Game.Weapons;
 using UnityEngine;
 
 namespace Game.PickUps
@@ -22,13 +23,25 @@ namespace Game.PickUps
 			}
 			else
 			{
-				PlayerInfoManager.Instance.Give(WeaponItem);
-			}
-			PlayerInfoManager.Instance.Equip(WeaponItem, equipOnly: true);
-			InGameLogManager.Instance.RegisterNewMessage(MessageType.Item, WeaponItem.ShopVariables.Name);
+				PlayerInfoManager.Instance.Give(WeaponItem, true);
+            }
+			PlayerInfoManager.Instance.Equip(WeaponItem, equipOnly: true); 
+			StuffManager.Instance.EquipWeapon(WeaponItem, 2);
+            //PlayerInfoManager.Instance.onEqipItem += Equip; 
+            //PlayerInfoManager.Instance.Equip(null, equipOnly: false);
+            InGameLogManager.Instance.RegisterNewMessage(MessageType.Item, WeaponItem.ShopVariables.Name);
 			PointSoundManager.Instance.PlayCustomClipAtPoint(base.transform.position, PickUpManager.Instance.WeaponItemPickupSound);
 			CollectionPickUpsManager.Instance.ElementWasTaken(base.gameObject);
 			base.TakePickUp();
 		}
+
+		public void Equip(GameItem item, bool equipOnly = false)
+		{
+            if (item == null)
+            {
+                item = WeaponItem;
+            }
+            StuffManager.Instance.EquipItem(item, equipOnly);
+        }
 	}
 }

@@ -1,3 +1,4 @@
+using DG.Tweening;
 using Game.Character;
 using Game.Character.CharacterController;
 using Game.Character.Superpowers;
@@ -392,7 +393,8 @@ namespace Game.Items
 			if (!equipOnly)
 			{
 				PlayerStoreProfile.SaveLoadout();
-				ShopManager.Instance.UpdateInfo();
+				if (ShopManager.Instance != null && ShopManager.IsOpen)
+					ShopManager.Instance.UpdateInfo();
 			}
 		}
 

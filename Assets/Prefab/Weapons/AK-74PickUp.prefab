@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1790840943042877285}
   - component: {fileID: 1790840943529419780}
   - component: {fileID: 1790840943361645732}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: AK74
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -90,9 +90,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1790840943042875334}
-  - component: {fileID: 9070713506392351895}
-  - component: {fileID: 5216996052163362128}
-  m_Layer: 0
+  - component: {fileID: 8660780336071484726}
+  - component: {fileID: 5599837394400443633}
+  m_Layer: 20
   m_Name: AK-74PickUp
   m_TagString: 
   m_Icon: {fileID: 0}
@@ -114,7 +114,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &9070713506392351895
+--- !u!65 &8660780336071484726
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -127,7 +127,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0.5, z: 0}
---- !u!114 &5216996052163362128
+--- !u!114 &5599837394400443633
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -139,8 +139,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 216ba56e905c8b8e2c17622fd796cf1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RotateCenter: {fileID: 0}
-  GameItemWeaponId: -1458380
+  RotateCenter: {fileID: 3467299160444578071}
+  GameItemWeaponId: -168118
 --- !u!1 &3467299160444578071
 GameObject:
   m_ObjectHideFlags: 0

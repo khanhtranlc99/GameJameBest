@@ -55,9 +55,9 @@ namespace Game.PickUps
                     break;
 			}
 			StuffManager.Instance.EquipWeapon(WeaponItem, slotIndex);
-            PlayerManager.Instance.DefaultWeaponController.CurrentWeapon = WeaponItem.Weapon;
-			PlayerManager.Instance.DefaultWeaponController.ActivateFists();
-			//defaultWeaponController.CurrentWeapon = WeaponItem;
+            PlayerManager.Instance.Player.WeaponController.ChooseSlot(slotIndex);
+            //PlayerManager.Instance.DefaultWeaponController.InitWeapon(slotIndex);
+            //defaultWeaponController.CurrentWeapon = WeaponItem;
 
             //PlayerInfoManager.Instance.onEqipItem += Equip; 
             //PlayerInfoManager.Instance.Equip(null, equipOnly: false);

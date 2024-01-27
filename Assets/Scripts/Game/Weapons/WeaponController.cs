@@ -50,11 +50,7 @@ namespace Game.Weapons
 
 		private float meleeWeaponDamageMultipler;
 
-		public Weapon CurrentWeapon 
-		{
-			get { return currentWeapon; }
-			set { currentWeapon = value; }
-		} 
+		public Weapon CurrentWeapon => currentWeapon;
 
 		public void Initialization()
 		{
